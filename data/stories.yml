@@ -1,0 +1,798 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: happy path kitucxa
+  steps:
+  - intent: kitucxa
+  - action: utter_kitucxa
+
+- story: happy path hoi diem do
+  steps:
+  - intent: hoidiemdo
+  - action: utter_hoidiemdo
+  - intent: diemdo1
+  - action: utter_diemdo1
+
+- story: happy path hoi diem do
+  steps:
+  - intent: hoidiemdo
+  - action: utter_hoidiemdo
+  - intent: diemdo2
+  - action: utter_diemdo2
+
+- story: happy path hoi diem do
+  steps:
+  - intent: hoidiemdo
+  - action: utter_hoidiemdo
+  - intent: diemdotruot
+  - action: utter_diemdotruot
+
+# em muon hoc> ng hoi noi khong
+- story: happy path em muon hoc
+  steps:
+  - intent: em_muon_hoc
+  - action: utter_em_muon_hoc
+  - intent: yesno_kohoc
+  - action: utter_em_muongi
+
+- story: interactive_story_1
+  steps:
+  - intent: em_muon_hoc
+  - action: utter_em_muon_hoc
+  - intent: yesno_muonhoc
+  - action: hoc_form
+  - active_loop: hoc_form
+  - slot_was_set:
+    - requested_slot: dk_nganh
+  - slot_was_set:
+    - requested_slot: dk_sodt
+  - slot_was_set:
+    - requested_slot: dk_email
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_thanks_hoc
+  - action: utter_slots_hoc
+# # em muon hoc> ng hoi noi ok
+# - story: happy path em muon hoc
+#   steps:
+#   - intent: em_muon_hoc
+#   - action: utter_em_muon_hoc
+#   - intent: yesno_muonhoc
+#   - action: utter_em_muongi
+
+# neu chon xet diem hoc ba
+- story: happy path xet hoc ba hay thptqg
+  steps:
+  - intent: xethocba_thptqg
+  - action: utter_hoixet_hinhthuc_nao
+  - intent: traloi_xethocba
+  - action: utter_xet_hocba
+
+# neu chon xet diem thi thpt
+- story: happy path xet hoc ba hay thptqg
+  steps:
+  - intent: xethocba_thptqg
+  - action: utter_hoixet_hinhthuc_nao
+  - intent: traloi_xetthptqg
+  - action: utter_diemchuan
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: happy path tu van + diemchuan
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_diemchuan
+  - action: utter_diemchuan
+
+
+- story: happy path tu van + hocphi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hocphi
+  - action: utter_hocphi
+
+- story: happy path tu van + cacnganh dao tao
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_ctdt
+  - action: utter_ctdt
+
+- story: happy path tu van + nophoso
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoso
+  - action: utter_nophoso
+
+- story: happy path tu van + hocthacsi > da tot nghiep
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hocthacsi
+  - action: utter_hoithacsi
+  - intent: datot_nghiep
+  - action: utter_thacsi_ok
+
+- story: happy path tu van + hocthacsi > chua tot nghiep
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hocthacsi
+  - action: utter_hoithacsi
+  - intent: chuatot_nghiep
+  - action: utter_thacsi_no
+
+# <!-- hoc online -->
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_hanoi
+  - action: utter_hanoi
+
+- story: happy path tu van + hoc online,diethi ha noi
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_hanoi
+  - action: utter_hanoi
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_hcm
+  - action: utter_hcm
+
+- story: happy path tu van + hoc online,diethi ha noi
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_hcm
+  - action: utter_hcm
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_phuyen
+  - action: utter_phuyen
+
+- story: happy path tu van + hoc online,diethi ha noi
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_phuyen
+  - action: utter_phuyen
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_danang
+  - action: utter_danang
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_nhatrang
+  - action: utter_nhatrang
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_gialai
+  - action: utter_gialai
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_quangbinh
+  - action: utter_quangbinh
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_hatinh
+  - action: utter_hatinh
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_nghean
+  - action: utter_nghean
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_ninhbinh
+  - action: utter_ninhbinh
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_vinhphuc
+  - action: utter_vinhphuc
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_quangninh
+  - action: utter_quangninh
+
+- story: happy path tu van + hoc online,diethi ha noi
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_quangninh
+  - action: utter_quangninh
+
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_haiphong
+  - action: utter_haiphong
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_dienbien
+  - action: utter_dienbien
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_haiduong
+  - action: utter_haiduong
+
+- story: happy path tu van + hoc online,diethi hai duong
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_haiduong
+  - action: utter_haiduong
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_bacninh
+  - action: utter_bacninh
+
+- story: happy path tu van + hoc online,diethi ha noi
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_bacninh
+  - action: utter_bacninh
+
+- story: happy path tu van + hoc online,elearning,truc tuyến
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_bacgiang
+  - action: utter_bacgiang
+
+- story: happy path tu van + hoc online,diethi ha noi
+  steps:
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_bacgiang
+  - action: utter_bacgiang
+
+- story: happy path tu van + hoc online,elearning,truc tuyến > ngoai diem dien
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_diemthi
+  - action: utter_diemthi
+  - intent: diemthi_no
+  - action: utter_diemthino
+
+# <!-- cac nganh dao tao online -->
+- story: happy path tu van + hoc online,elearning,truc tuyến 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_cacnganh_online
+  - action: utter_cacnganh_online
+
+- story: happy path tu van + hoc online,elearning,truc tuyến 
+  steps:
+  - intent: online_cacnganh_online
+  - action: utter_cacnganh_online
+
+# <!-- hoc phi online -->
+- story: happy path tu van + hoc online,elearning,truc tuyến >hocphi online
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_hocphi
+  - action: utter_online_hocphi
+
+- story: happy path tu van + hoc online,elearning,truc tuyến >hocphi online
+  steps:
+  - intent: online_hocphi
+  - action: utter_online_hocphi
+
+- story: happy path tu van + hoc online,elearning,truc tuyến >thu tuc dk online
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_thutuc_dangki
+  - action: utter_online_thutuc_dangki
+
+- story: happy path tu van + hoc online,elearning,truc tuyến >thu tuc dk online
+  steps:
+  - intent: online_thutuc_dangki
+  - action: utter_online_thutuc_dangki
+
+- story: happy path tu van + hoc online,elearning,truc tuyến >thu tuc nhaphk online
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tuvan_ydinh
+  - action: utter_tuvan
+  - intent: tuvan_hoctuxa
+  - action: utter_hoconline
+  - intent: online_thutuc_nhaphoc
+  - action: utter_online_thutuc_nhaphoc
+
+- story: happy path tu van + hoc online,elearning,truc tuyến >thu tuc nhaphk online
+  steps:
+  - intent: online_thutuc_nhaphoc
+  - action: utter_online_thutuc_nhaphoc
+# <!-- dao tao> phan loai 2 chuong trinh -->
+- story: happy path dao tao> phan loai 2 chuong trinh>tai truong
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chuongtrinh_daotao
+  - action: utter_chuong_trinh_daotao
+  - intent: tuvan_ctdt
+  - action: utter_ctdt
+
+- story: happy path dao tao> phan loai 2 chuong trinh> tu xa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chuongtrinh_daotao
+  - action: utter_chuong_trinh_daotao
+  - intent: online_cacnganh_online
+  - action: utter_cacnganh_online
+
+# <!-- xet học bạ -->
+- story: sad path xet hocba
+  steps:
+  - intent: xet_hocba
+  - action:  utter_xet_hocba
+
+- story: sad path hoc cao dang bn nam
+  steps:
+  - intent: hoc_caodang
+  - action:  utter_hoc_caodang
+
+- story: sad path hoc dai hoc bn nam
+  steps:
+  - intent: hoc_daihoc
+  - action:  utter_hoc_daihoc
+
+- story: sad danh sach cau hoi
+  steps:
+  - intent: hoc_159
+  - action: utter_hoc_159
+  - intent: hoc_160
+  - action: utter_hoc_160
+  - intent: hoc_161
+  - action: utter_hoc_161
+  - intent: hoc_162
+  - action: utter_hoc_162
+  - intent: hoc_163
+  - action: utter_hoc_163
+  - intent: hoc_164
+  - action: utter_hoc_164
+  - intent: hoc_165
+  - action: utter_hoc_165
+  - intent: hoc_166
+  - action: utter_hoc_166
+  - intent: hoc_167
+  - action: utter_hoc_167
+  - intent: hoc_168
+  - action: utter_hoc_168
+  - intent: hoc_169
+  - action: utter_hoc_169
+  - intent: hoc_170
+  - action: utter_hoc_170
+  - intent: hoc_171
+  - action: utter_hoc_171
+  - intent: hoc_172
+  - action: utter_hoc_172
+  - intent: hoc_173
+  - action: utter_hoc_173
+  - intent: hoc_174
+  - action: utter_hoc_174
+  - intent: hoc_175
+  - action: utter_hoc_175
+  - intent: hoc_176
+  - action: utter_hoc_176
+  - intent: hoc_177
+  - action: utter_hoc_177
+  - intent: hoc_178
+  - action: utter_hoc_178
+  - intent: hoc_179
+  - action: utter_hoc_179
+  - intent: hoc_180
+  - action: utter_hoc_180
+  - intent: hoc_181
+  - action: utter_hoc_181
+  - intent: hoc_182
+  - action: utter_hoc_182
+  - intent: hoc_183
+  - action: utter_hoc_183
+  - intent: hoc_184
+  - action: utter_hoc_184
+  - intent: hoc_185
+  - action: utter_hoc_185
+  - intent: hoc_186
+  - action: utter_hoc_186
+  - intent: hoc_187
+  - action: utter_hoc_187
+  - intent: hoc_188
+  - action: utter_hoc_188
+  - intent: hoc_189
+  - action: utter_hoc_189
+  - intent: hoc_190
+  - action: utter_hoc_190
+  - intent: hoc_191
+  - action: utter_hoc_191
+  - intent: hoc_192
+  - action: utter_hoc_192
+  - intent: hoc_193
+  - action: utter_hoc_193
+  - intent: hoc_194
+  - action: utter_hoc_194
+  - intent: hoc_195
+  - action: utter_hoc_195
+  - intent: hoc_196
+  - action: utter_hoc_196
+  - intent: hoc_197
+  - action: utter_hoc_197
+  - intent: hoc_198
+  - action: utter_hoc_198
+  - intent: hoc_199
+  - action: utter_hoc_199
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 200
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hoc_200
+  - action: utter_hoc_200
+  - intent: hoc_201
+  - action: utter_hoc_201
+  - intent: hoc_202
+  - action: utter_hoc_202
+  - intent: hoc_203
+  - action: utter_hoc_203
+  - intent: hoc_204
+  - action: utter_hoc_204
+  - intent: hoc_205
+  - action: utter_hoc_205
+  - intent: hoc_206
+  - action: utter_hoc_206
+  - intent: hoc_207
+  - action: utter_hoc_207
+  - intent: hoc_208
+  - action: utter_hoc_208
+  - intent: hoc_209
+  - action: utter_hoc_209
+  - intent: hoc_210
+  - action: utter_hoc_210
+  - intent: hoc_211
+  - action: utter_hoc_211
+  - intent: hoc_212
+  - action: utter_hoc_212
+  - intent: hoc_213
+  - action: utter_hoc_213
+  - intent: hoc_214
+  - action: utter_hoc_214
+  - intent: hoc_215
+  - action: utter_hoc_215
+  - intent: hoc_216
+  - action: utter_hoc_216
+  - intent: hoc_217
+  - action: utter_hoc_217
+  - intent: hoc_218
+  - action: utter_hoc_218
+  - intent: hoc_219
+  - action: utter_hoc_219
+  - intent: hoc_220
+  - action: utter_hoc_220
+  - intent: hoc_221
+  - action: utter_hoc_221
+  - intent: hoc_222
+  - action: utter_hoc_222
+  - intent: hoc_223
+  - action: utter_hoc_223
+  - intent: hoc_224
+  - action: utter_hoc_224
+  - intent: hoc_225
+  - action: utter_hoc_225
+  - intent: hoc_226
+  - action: utter_hoc_226
+  - intent: hoc_227
+  - action: utter_hoc_227
+  - intent: hoc_228
+  - action: utter_hoc_228
+  - intent: hoc_229
+  - action: utter_hoc_229
+  - intent: hoc_230
+  - action: utter_hoc_230
+  - intent: hoc_231
+  - action: utter_hoc_231
+  - intent: hoc_232
+  - action: utter_hoc_232
+  - intent: hoc_233
+  - action: utter_hoc_233
+  - intent: hoc_234
+  - action: utter_hoc_234
+  - intent: hoc_235
+  - action: utter_hoc_235
+  - intent: hoc_236
+  - action: utter_hoc_236
+  - intent: hoc_237
+  - action: utter_hoc_237
+  - intent: hoc_238
+  - action: utter_hoc_238
+  - intent: hoc_239
+  - action: utter_hoc_239
+  - intent: hoc_240
+  - action: utter_hoc_240
+  - intent: hoc_241
+  - action: utter_hoc_241
+  - intent: hoc_241
+  - action: utter_hoc_242
+  - intent: hoc_243
+  - action: utter_hoc_243
+  - intent: hoc_244
+  - action: utter_hoc_244
+  - intent: hoc_245
+  - action: utter_hoc_245
+  - intent: hoc_246
+  - action: utter_hoc_246
+  - intent: hoc_247
+  - action: utter_hoc_247
+  - intent: hoc_248
+  - action: utter_hoc_248
+  - intent: hoc_249
+  - action: utter_hoc_249
+  - intent: hoc_250
+  - action: utter_hoc_250
+  - intent: hoc_251
+  - action: utter_hoc_251
+  - intent: hoc_252
+  - action: utter_hoc_251
+  - intent: hoc_253
+  - action: utter_hoc_253
+  - intent: hoc_254
+  - action: utter_hoc_254
+  - intent: hoc_255
+  - action: utter_hoc_255
+  - intent: hoc_256
+  - action: utter_hoc_256
+  - intent: hoc_257
+  - action: utter_hoc_257
+  - intent: hoc_258
+  - action: utter_hoc_258
+  - intent: hoc_259
+  - action: utter_hoc_259
+
+- story: happy 260
+  steps:
+  - intent: hoc_260
+  - action: utter_hoc_260
+  - intent: affirm
+  - action: utter_happy

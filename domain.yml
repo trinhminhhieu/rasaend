@@ -1,0 +1,1546 @@
+version: "2.0"
+
+# intents:
+#   - greet
+#   - goodbye
+#   - affirm
+#   - deny
+#   - mood_great
+#   - mood_unhappy
+#   - bot_challenge
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - tuvan_ydinh
+  - tuvan_nganhhoc
+  - tuvan_ctdt
+  - tuvan_hocphi
+  - tuvan_diemchuan
+  - tuvan_hocthacsi
+  - tuvan_hoctuxa
+  - tuvan_hoso
+  - tuvan_khac
+  - datot_nghiep
+  - chuatot_nghiep
+  - online_diemthi
+  - diemthi_no
+  - diemthi_hanoi
+  - diemthi_hcm
+  - diemthi_phuyen
+  - diemthi_danang
+  - diemthi_nhatrang
+  - diemthi_gialai
+  - diemthi_quangbinh
+  - diemthi_hatinh
+  - diemthi_nghean
+  - diemthi_ninhbinh
+  - diemthi_vinhphuc
+  - diemthi_quangninh
+  - diemthi_haiphong
+  - diemthi_dienbien
+  - diemthi_haiduong
+  - diemthi_bacninh
+  - diemthi_bacgiang
+  - online_cacnganh_online
+  - online_hocphi
+  - online_thutuc_dangki
+  - online_dangki
+  - online_thutuc_nhaphoc
+  - dk_trung
+  - dk_anh
+  - dk_dulich
+  - dk_kientruc
+  - dk_ktdtvt
+  - dk_cntp
+  - dk_cnsh
+  - dk_luatkt
+  - dk_luat
+  - dk_tmdt
+  - dk_qtkd
+  - dk_tcnh
+  - dk_tkcn
+  - dk_ketoan
+  - dk_cntt
+  - dang_ky_hoc
+  - chuongtrinh_daotao
+  - xet_hocba
+  - hoc_caodang
+  - hoc_daihoc
+  - chitchat
+  - kitucxa
+  - hoidiemdo
+  - diemdo1
+  - diemdo2
+  - diemdotruot
+  - traloi_xethocba
+  - traloi_xetthptqg
+  - xethocba_thptqg
+  - em_muon_hoc
+  - yesno_muonhoc
+  - yesno_kohoc
+  - hoc_159
+  - hoc_160
+  - hoc_161
+  - hoc_162
+  - hoc_163
+  - hoc_164
+  - hoc_165
+  - hoc_166
+  - hoc_167
+  - hoc_168
+  - hoc_169
+  - hoc_170
+  - hoc_171
+  - hoc_172
+  - hoc_173
+  - hoc_174
+  - hoc_175
+  - hoc_176
+  - hoc_177
+  - hoc_178
+  - hoc_179
+  - hoc_180
+  - hoc_181
+  - hoc_182
+  - hoc_183
+  - hoc_184
+  - hoc_185
+  - hoc_186
+  - hoc_187
+  - hoc_188
+  - hoc_189
+  - hoc_190
+  - hoc_191
+  - hoc_192
+  - hoc_193
+  - hoc_194
+  - hoc_195
+  - hoc_196
+  - hoc_197
+  - hoc_198
+  - hoc_199
+  - hoc_200
+  - hoc_201
+  - hoc_202
+  - hoc_203
+  - hoc_204
+  - hoc_205
+  - hoc_206
+  - hoc_207
+  - hoc_208
+  - hoc_209
+  - hoc_210
+  - hoc_211
+  - hoc_212
+  - hoc_213
+  - hoc_214
+  - hoc_215
+  - hoc_216
+  - hoc_217
+  - hoc_218
+  - hoc_219
+  - hoc_220
+  - hoc_221
+  - hoc_222
+  - hoc_223
+  - hoc_224
+  - hoc_225
+  - hoc_226
+  - hoc_227
+  - hoc_228
+  - hoc_229
+  - hoc_230
+  - hoc_231
+  - hoc_232
+  - hoc_233
+  - hoc_234
+  - hoc_235
+  - hoc_236
+  - hoc_237
+  - hoc_238
+  - hoc_239
+  - hoc_240
+  - hoc_241
+  - hoc_242
+  - hoc_243
+  - hoc_244
+  - hoc_245
+  - hoc_246
+  - hoc_247
+  - hoc_248
+  - hoc_249
+  - hoc_250
+  - hoc_251
+  - hoc_252
+  - hoc_253
+  - hoc_254
+  - hoc_255
+  - hoc_256
+  - hoc_257
+  - hoc_258
+  - hoc_259
+  - hoc_260
+
+
+
+
+
+forms:
+  name_form:
+    required_slots:
+        dk_nganh:
+          - type: from_text
+        dk_name:
+          - type: from_text
+        dk_sodt:
+          - type: from_text
+        dk_email:
+          - type: from_text
+        dk_diachi:
+          - type: from_text
+
+  dk_form:
+    required_slots:
+        dk_name:
+          - type: from_text
+        dk_sodt:
+          - type: from_text
+        dk_email:
+          - type: from_text
+
+  hoc_form:
+    required_slots:
+        dk_nganh:
+          - type: from_text
+        dk_sodt:
+          - type: from_text
+        dk_email:
+          - type: from_text
+
+
+slots:
+  dk_nganh:
+    type: text
+    influence_conversation: true
+  dk_name:
+    type: text
+    influence_conversation: true
+  dk_sodt:
+    type: text
+    influence_conversation: true
+  dk_email:
+    type: text
+    influence_conversation: true
+  dk_diachi:
+    type: text
+    influence_conversation: true
+
+
+
+responses:
+  utter_hoc_159:
+  -  
+       text: |-
+            Hiện nay nhà trường đang làm thủ tục nhập học trực tiếp. Em có thể tham khảo link sau để chuẩn bị các giấy tờ có liên quan nhé
+
+            https://tuyensinh.hou.edu.vn/tintucchitiet/BT283/
+
+            Em đến sẽ được nhập học ngay em nhé.
+
+            Chúc em sức khỏe và học tập tốt.  
+  utter_hoc_160:
+  -  
+       text: |-
+            Nếu em đăng ký nguyện vọng 2 vào ngành Ngôn ngữ Trung Quốc đồng thời không đỗ nguyện vọng 1 thì em đủ điều kiện trúng tuyển nhé. Em có thể tra cứu kết quả trúng tuyển tại địa chỉ https://tuyensinh.hou.edu.vn/tracuu2020
+
+            Chúc em thành công.
+  utter_hoc_161:
+  -  
+       text: |-
+            Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. 
+
+            Sau ngày 15.10 nếu ngành nào còn thiếu sinh viên thì mới xét tiếp đợt 2 em ạ.
+
+            Tuy nhiên thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+            Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+            Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_162:
+  -  
+       text: |-
+               Chào bạn!
+
+                Ngành TMĐT thuộc Khoa Kinh tế học tại 193 Vĩnh Hưng - Hoàng Mai - Hà Nội
+
+                Theo quy định không được đổi ngành bạn nhé. Khi vào học bạn có thể đăng ký học hình thức song bằng (học cùng lúc 2 ngành và kết thúc 4 năm đại học sẽ có cùng lúc 2 bằng đại học chính quy)
+
+                Chào đón bạn đến với ĐH Mở HN!
+  utter_hoc_163:
+  -  
+       text: |-
+              Mời em tham khảo thông tin tại link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT288/ - https://tuyensinh.hou.edu.vn/
+
+                Hoặc gọi điện thoại tới Phòng Tuyển sinh - Trung tâm Phát triển Đào tạo (Phòng A 1.1)
+
+                  Địa chỉ : Nhà B101, Nguyễn Hiền, Hai Bà Trưng, Hà Nội
+
+                  Điện thoại: 0243. 868 2982  - 0243. 868 1855
+
+                  Email: ttptdt@hou.edu.vn
+
+                  Trân trọng! 
+  utter_hoc_164:
+  -  
+       text: |-
+                Sau khi tổng hợp được số lượng sinh viên trúng tuyển vào các ngành KT, QTKD, TMĐT, nếu còn thiếu chỉ tiêu Khoa sẽ thông báo sau em nhé
+  utter_hoc_165:
+  -  
+       text: |-
+               Chào anh (chị). Ban tư vấn tuyển sinh trả lời câu hỏi của anh (chị) như sau:
+
+                Hiện nay nhà trường đã hết thời hạn đăng ký xét tuyển ở tất cả các hình thức nên rất tiếc không thể tiếp nhận hồ sơ của anh (chị) được.
+
+                Cám ơn anh (chị) đã gửi câu hỏi.
+  utter_hoc_166:
+  -  
+       text: |-
+               Khi trúng tuyển vào Trường, sv sẽ được hướng dẫn làm thẻ BHYT, lúc đó em liên hệ trực tiếp với GV phụ trách em nhé
+  
+  utter_hoc_167:
+  -  
+       text: |-
+                  Khoa Kinh tế năm nay không xét học bạ mà xét tuyển dựa vào kết quả thi THPT 2020
+
+                  Em có thể tham khảo thêm thông tin về điểm trúng tuyển mới nhất tại: https://tuyensinh.hou.edu.vn/tracuu2020/
+
+                  Chúc em thành công !
+  utter_hoc_168:
+  -  
+       text: |-
+               Chương trình đào tạo Chính quy thì sinh viên phải học tập trung và có thể kết hợp học trực tuyến, còn học từ xa hay vừa làm vừa học sẽ linh hoạt thời gian hơn: học trong tuần, cuối tuần và học hoàn toàn trực tuyến
+
+                  Bạn xem thêm các hệ đào tạo của ĐH Mở nhé, bạn hoàn toàn yên tâm về chương trình cũng như chất lượng đào tạo
+
+                  Chúc bạn thành công!
+  utter_hoc_169:
+  -  
+       text: |-
+               Khoa Kinh tế năm nay không xét học bạ mà xét tuyển dựa vào kết quả thi THPT 2020
+
+                Em có thể tham khảo thêm thông tin về điểm trúng tuyển mới nhất tại: https://tuyensinh.hou.edu.vn/tracuu2020/
+
+                Chúc em thành công !
+  utter_hoc_170:
+  -  
+       text: |-
+                Hiện nay nhà trường chưa có thông tin chính thức về kết quả trúng tuyển theo hình thức xét học bạ. Em thường xuyên cập nhật cổng thông tin tuyển sinh của nhà trường tuyensinh.hou.edu.vn để biết chi tiết nhé.
+
+                Cám ơn em đã gửi câu hỏi.
+  utter_hoc_171:
+  -  
+       text: |-
+                Về bản sao thì phải nộp công chứng trong 6 tháng, khi nộp bản cứ nộp bản đó và sẽ bổ sung sau được nhé
+
+                Chào đón bạn đến với Khoa Kinh tế - Trường ĐH Mở HN
+  utter_hoc_172:
+  -  
+       text: |-
+                Thí sinh không đủ điểm xét đại học chính quy vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_173:
+  -  
+       text: |-
+                  Dựa theo điểm trúng tuyển mới ban hàng ngày 4/10 thì em có khả năng đỗ vào Trường rất cao
+
+                  Em có thể tham khảo thêm thông tin mới nhất tại : https://tuyensinh.hou.edu.vn/tracuu2020/
+
+                  Chào mừng em đến với Khoa Kinh tế
+  utter_hoc_174:
+  -  
+       text: |-
+               Đối với các ngành sức khỏe: bằng tốt nghiệp cao đẳng + chứng chỉ hành nghề
+               Đối với các ngành còn lại: bằng tốt nghiệp
+
+  utter_hoc_175:
+  -  
+       text: |-
+               Chào em, 
+
+                Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. Ngay sau khi nhà trường nhận được phiếu điểm và các giấy tờ có liên quan theo thông báo https://tuyensinh.hou.edu.vn/tintucchitiet/BT283/ thì sẽ gửi giấy báo nhập học cho em nhé.
+
+                Chúc em sức khỏe và học tập tốt.
+
+ 
+  utter_hoc_176:
+  -  
+       text: |-
+              Các thông tin về việc xét tuyển đợt 2 nếu có thì phải đợi sau ngày 15.10 em nhé. Cảm ơn em đã yêu quý nhà trường
+
+              Thân mến! 
+  utter_hoc_177:
+  -  
+       text: |-
+                Sau khi tổng hợp được số lượng sinh viên trúng tuyển vào các ngành KT, QTKD, TMĐT, nếu còn thiếu chỉ tiêu Khoa sẽ  thông báo sau em nhé
+  
+  utter_hoc_178:
+  -  
+       text: |-
+              Chào bạn,
+
+                Bạn có thể đăng kí hệ từ xa ngành Ngôn ngữ Trung Quốc nhé. Hệ từ xa ngành Ngôn ngữ Trung Quốc xét tuyển theo hồ sơ, văn bằng. Nhận hồ sơ liên tục trong năm.
+
+                - Chương trình đào tạo bao gồm 136 tín chỉ.
+
+                - Thời gian đào tạo tối thiểu: từ 01 năm đến 3,5 năm (căn cứ vào hồ sơ, văn bằng của sinh viên nộp trong hồ sơ xét tuyển).
+
+                - Học phí: 340.000đ/tín chỉ
+
+                Bạn có thể tham khảo thêm thông tin chi tiết tại https:https://tuyensinh.hou.edu.vn/tintucchitiet/BT265/
+
+                Chúc bạn thành công. 
+  utter_hoc_179:
+  -  
+       text: |-
+              Học ngành Kế toán thuộc Khoa Kinh tế tại 193 Vĩnh Hưng - Hoàng Mai - Hà Nội
+
+                Chào đón em đến với Khoa Kinh tế! 
+
+  utter_hoc_180:
+  -  
+       text: |-
+               Vấn đề miễn giảm học phí bạn vui lòng liên hệ phòng Công tác sinh viên, số điện thoại 02363.650403 - số nội bộ 223 để được tư vấn cụ thể hơn nhé
+
+
+  utter_hoc_181:
+  -  
+       text: |-
+               Học ngành Kế toán thuộc Khoa Kinh tế tại 193 Vĩnh Hưng - Hoàng Mai - Hà Nội
+
+                Chào đón em đến với Khoa Kinh tế! 
+  utter_hoc_182:
+  -  
+       text: |-
+               Chào em! Ban tư vấn tuyển sinh trả lời câu hỏi của em
+
+                  Em có thể xem trong Đề án tuyển sinh năm 2020 để biết chi tiết cách tính điểm của năm nay nhé.
+
+                  https://tuyensinh.hou.edu.vn/upload_image/files/2020/Ph%E1%BA%A7n%20II_%C4%90%E1%BB%81%20%C3%A1n%20TS2020.pdf
+
+                  Cám ơn em đã gửi câu hỏi.
+  utter_hoc_183:
+  -  
+       text: |-
+               Tài chính - ngân hàng (tên tiếng Anh là Finance and Banking) làm một ngành khá rộng, bao quát toàn bộ các hoạt động liên quan đến giao dịch tiền tệ và kinh doanh thông qua ngân hàng. Cụ thể đó là tập trung các lĩnh vực liên quan đến tài chính như: Tài chính thuế, tài chính doanh nghiệp và tất cả các vấn đề cần đến công cụ tài chính để thanh toán các cước phí trong nước và quốc tế.
+                Ngành Tài chính - ngân hàng được chia nhỏ thành nhiều lĩnh vực riêng biệt đó là: Chuyên ngành về tài chính, chuyên ngành ngân hàng, chuyên ngành phân tích tài chính, kinh tế học tài chính...
+                Chương trình đào tạo ngành Tài chính - ngân hàng sẽ trang bị cho sinh viên tất cả các kiến thức chuyên sâu, chuyên ngành về lĩnh vực ngân hàng, tài chính, tiền tệ, phương pháp quản trị tín dụng… để giúp bạn có thể theo đuổi ngành nghề cùng với sự phát triển vượt bậc của ngân hàng hiện nay.
+                Bên cạnh đó, khi lựa chọn ngành Tài chính - ngân hàng, các bạn còn được trang bị thêm một tầng kiến thức về cách quản lý tài chính hiệu quả, tiền tệ hiện đại, quản trị cho ngân hàng, doanh nghiệp, công ty. Ngoài ra, học Tài chính - ngân hàng còn được hiểu thêm về các công cụ giúp quản lý rủi ro tài chính hiệu quả. Nắm rõ về quy trình hoạt động tài chính, cách thống kê, về kế toán thuế, và lĩnh vực bảo hiểm trong ngân hàng.
+                
+  utter_hoc_184:
+  -  
+       text: |-
+               Chào em,
+
+                  - Thời lượng thiết kế cho chương trình đào tạo của ngành Ngôn ngữ Trung Quốc là 136 tín chỉ, học trong vòng 4 năm. Tuy nhiên, theo cơ chế tín chỉ, sinh viên có thể tự điều chỉnh thời gian học tập để ra trường sớm hơn hoặc muộn hơn.
+
+                  Chương trình đào tạo ngành Ngôn ngữ Trung Quốc em tham khảo tại: http://khoatiengtrungquoc.hou.edu.vn/tin-tuc/chuong-trinh-dao-tao-chi-tiet-theo-he-thong-tin-chi_116/
+
+                  - Học tiếng Trung có khó không hay là dễ hoàn toàn phụ thuộc vào cảm nhận của mỗi người cũng như phương pháp học tập của người đó. Mỗi khi học tiếng Trung em hãy nhớ đến lý do vì sao mà mình học tiếng Trung, xem mình đã có phương pháp thích hợp chưa, mình có đam mê chưa, mình thực sự chăm chỉ và quyết tâm chưa. Khi đó, em mới có thể học tiếng Trung tốt được. Em cứ yên tâm rằng, các thầy/cô sẽ luôn hỗ trợ và hướng dẫn các em.
+
+                  - Sinh viên ngành Ngôn ngữ Trung Quốc tốt nghiệp ra trường có thể làm các công việc sau:
+
+                  + Tham gia làm việc trong các cơ quan Nhà nước hoặc các doanh nghiệp liên quan đến  lĩnh vực đối ngoại, truyền thông, kinh tế, thương mại, du lịch …
+
+                  + Có khả năng làm việc tại các cơ quan đại diện các tổ chức quốc tế, các công ty mà tiếng Trung Quốc là ngôn ngữ làm việc chính thức, hoặc có mối liên lệ thường xuyên với các quốc gia, vùng lãnh thổ sử dụng tiếng Trung Quốc như: Trung Quốc, Đài Loan, Hồng Kông, Ma Cao, Singapore, v.v... 
+
+                  + Làm việc ở các cơ quan quản lý có liên quan đến công tác đối ngoại, làm việc tại các công ty nước ngoài, các công ty liên doanh mà tiếng Trung Quốc được sử dụng thường xuyên..
+
+                  + Giảng dạy tiếng Trung Quốc tại các trường Đại học, Cao đẳng, Trung học chuyên nghiệp, THPT hoặc THCS nơi có bộ môn tiếng Trung Quốc.
+
+                  + Nghiên cứu khoa học tại các Viện nghiên cứu có lĩnh vực nghiên cứu thường xuyên là Ngôn ngữ Trung Quốc.
+
+                  Hàng năm, Nhà trường đều tổ chức ngày hội việc làm cho sinh viên, với hơn 50 đơn vị tuyển dụng sử dụng lao động. Đồng thời Nhà trường cũng có kí kết hợp tác toàn diện với một số đơn vị về việc tuyển dụng, sử dụng lao động ngày cả khi các em còn đang là sinh viên, đặc biệt là đối với các bạn sinh viên năm thứ 4, năm cuối; để khi các em tốt nghiệp ra trường là có cơ hội việc làm và tìm được việc làm ngay.
+
+                  Em có thể tham khảo thêm các thông tin khác tại cổng thông tin tuyển sinh của Nhà trường: https://tuyensinh.hou.edu.vn/
+
+                  Chúc em thành công.
+  utter_hoc_185:
+  -  
+       text: |-
+               Chào em! Ban tuyển sinh trả lời câu hỏi của em như sau:
+
+                  Hiện nay nhà trường đã hết thời hạn đăng ký xét tuyển với tất cả các hình thức nên em không thể nộp hồ sơ đăng ký xét tuyển được.
+
+                  Cám ơn em đã gửi câu hỏi.
+  utter_hoc_186:
+  -  
+       text: |-
+                Em hãy kiểm tra lại:
+
+                1. Cách tính điểm của mình xem có sai ở đâu không
+
+                2. Các nguyện vọng của mình đã đăng ký xem có đỗ ở trường nào khác không
+
+                Nếu đã kiểm tra kỹ mà vẫn thấy thắc mắc mời em đến trường hỏi trực tiếp hoặc gọi điện thoại để được tư vấn em nhé
+
+                Điện thoại liên hệ: (024) 62974545 - (024) 62974646 
+  utter_hoc_187:
+  -  
+       text: |-
+               Chào em,
+                Em phản hồi cho ban tuyển sinh biết em trúng tuyển ngành nào để có thể đưa ra cho em những tư vấn chính xác nhất nhé!
+  utter_hoc_188:
+  -  
+       text: |-
+                Thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_189:
+  -  
+       text: |-
+                  Sau khi kết thúc xét tuyển đợt 1, nếu chỉ tiêu tuyển sinh vẫn còn thì nhà trường sẽ tiếp tục xét tuyển đợt 2. Theo quy định, điểm xét tuyển đợt 2 sẽ phải thấp hơn hoặc bằng điểm xét tuyển đợt 1.
+
+                  Chúc em sẽ đưa ra những quyết định đúng đắn!
+  utter_hoc_190:
+  -  
+       text: |-
+                  Mời em tham khảo thông tin tại link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT288/ - https://tuyensinh.hou.edu.vn/
+
+                  Hoặc gọi điện thoại tới Phòng Tuyển sinh - Trung tâm Phát triển Đào tạo (Phòng A 1.1)
+
+                  Địa chỉ : Nhà B101, Nguyễn Hiền, Hai Bà Trưng, Hà Nội
+
+                  Điện thoại: 0243. 868 2982  - 0243. 868 1855
+
+                  Email: ttptdt@hou.edu.vn
+
+                  Trân trọng!
+  utter_hoc_191:
+  -  
+       text: |-
+                  Sau ngày 14/10 khi nhà trường tổ chức nhập học đợt 1 xong, nếu còn chỉ tiêu nhà trường sẽ thông báo xét tuyển bổ sung trên trang web của trường.
+
+                  Nếu xét tuyển bổ sung, điểm xét tuyển sẽ lấy từ điểm chuẩn của đợt 1 trở lên chứ không hạ điểm em nhé
+  utter_hoc_192:
+  -  
+       text: |-
+               Chào em! Ban tư vấn tuyển sinh trả lời câu hỏi của em.
+
+                  Em cho biết em đăng ký xét tuyển theo hình thức nào? Nếu em đăng ký xét tuyển theo hình thức học bạ thì hiện nay nhà trường chưa có thông báo điểm chuẩn nên em chưa thể tra được trên webside. Em thường xuyên cập nhật vào tuyensinh.hou.edu.vn để biết thông tin nhé.
+
+                  Cám ơn em đã gửi câu hỏi.
+  utter_hoc_193:
+  -  
+       text: |-
+              Em tham khảo thông tin mới nhất về điểm chuẩn của Trường tại : https://tuyensinh.hou.edu.vn/tracuu2020/
+
+              Chúc em thành công !  
+  utter_hoc_194:
+  -  
+       text: |-
+                Em thông tin cho Ban tuyển sinh biết ngành học em đang có nguyện vọng đăng kí để có thể đưa ra tư vấn đúng nhất nhé!
+
+                Chờ phản hồi từ em!  
+  utter_hoc_195:
+  -  
+       text: |-
+               Chào em! Ban tư vấn tuyển sinh trả lời câu hỏi của em
+
+                Em có thể xem trong Đề án tuyển sinh năm 2020 để biết chi tiết cách tính điểm của năm nay nhé.
+
+                https://tuyensinh.hou.edu.vn/upload_image/files/2020/Ph%E1%BA%A7n%20II_%C4%90%E1%BB%81%20%C3%A1n%20TS2020.pdf
+
+                Cám ơn em đã gửi câu hỏi.
+  utter_hoc_196:
+  -  
+       text: |-
+                  Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. 
+
+                  Sau ngày 15.10 nếu ngành nào còn thiếu sinh viên thì mới xét tiếp đợt 2 em ạ.
+
+                  Tuy nhiên thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                  Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                  Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_197:
+  -  
+       text: |-
+              Theo đề án tuyển sinh năm nay của trường thì học phí năm học 2022-2023 là từ 13,685,000đ đến 14,350,000đ tùy vào từng ngành em nhé
+
+              Khoa CNTT sẽ học tại khu giảng đường 96 Định Công, Hoàng Mai, Hà Nội.
+
+              Chúc em sức khỏe và học tập tốt.   
+  utter_hoc_198:
+  -  
+       text: |-
+              Sau ngày 14/10 khi nhà trường tổ chức nhập học đợt 1 xong, nếu còn chỉ tiêu nhà trường sẽ thông báo xét tuyển bổ sung trên trang web của trường em nhé.
+  utter_hoc_199:
+  -  
+       text: |-
+                Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. 
+
+                Sau ngày 15.10 nếu ngành nào còn thiếu sinh viên thì mới xét tiếp đợt 2 em ạ.
+
+                Tuy nhiên thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_200:
+  -  
+       text: |-
+                Hiện nay nhà trường chưa có thông tin chính thức về kết quả trúng tuyển theo hình thức xét học bạ. Em thường xuyên cập nhật cổng thông tin tuyển sinh của nhà trường tuyensinh.hou.edu.vn để biết chi tiết nhé.
+
+                Cám ơn em đã gửi câu hỏi. 
+  utter_hoc_201:
+  -  
+       text: |-
+              Trường có từ năm 2009 trở lại đây nhé! 
+  utter_hoc_202:
+  -  
+       text: |-
+                Nếu đợt 1 chưa đủ chỉ tiêu tuyển sinh thì nhà trường sẽ tiếp tục mở tuyển sinh đợt 2 và công bố mức điểm trúng tuyển đợt 2 nhé!
+  utter_hoc_203:
+  -  
+       text: |-
+                  Vì cách thức xét tuyển của 2 ngành khác nhau nên không thể chuyển ngành được.
+
+                  Nhưng cô tin là khi em vào học ngành CNTP em sẽ thấy yêu quý ngành mình, khoa mình và không có ý định chuyển sang ngành khác đâu.
+
+                  Chúc mừng em đến với ngành CNTP.
+  utter_hoc_204:
+  -  
+       text: |-
+               Chào em! Ban tư vấn tuyển sinh trả lời câu hỏi của em.
+
+                  Hiện nay nhà trường chưa có thông báo điểm chuẩn đối với hình thức xét tuyển học bạ nên em chưa thể tra được trên webside. Em thường xuyên cập nhật vào tuyensinh.hou.edu.vn để biết thông tin nhé.
+
+                  Cám ơn em đã gửi câu hỏi.
+  utter_hoc_205:
+  -  
+       text: |-
+                Theo quy định sau khi có kết quả học tập của học kỳ 1, nếu em đạt Trung bình chung học kỳ từ 2.0 trở lên (thang điểm 4) em sẽ được quyền đăng ký học thêm 1 ngành nữa em nhé
+  utter_hoc_206:
+    -  
+       text: |-
+                Hiện nay nhà trường đã hết hạn nộp hồ sơ xét tuyển bằng học bạ. Sau ngày 14/10 khi nhà trường tổ chức nhập học đợt 1 xong, nếu còn chỉ tiêu nhà trường sẽ thông báo xét tuyển bổ sung trên trang web của trường em nhé. 
+  utter_hoc_207:
+  -  
+       text: |-
+                  Ngành Kế toán thuộc nhóm Ngành 3 xét tuyển các tổ hợp A00, A01, D01.
+
+                  Các tính điểm là Cộng tổng điểm của 3 môn trong tổ hợp nhé!
+  utter_hoc_208:
+  -  
+       text: |-
+                Hiện nay Trường mới có kế hoạch tuyển sinh đợt 1 bạn nhé
+
+                Bạn quan tâm thì rất mong bạn xem trên trang tuyển sinh của nhà trường
+
+                Chúc bạn thành công! 
+  utter_hoc_209:
+  -  
+       text: |-
+                Em có thể tham khảo hướng dẫn làm thủ tục xác nhận nhập học và nhập học theo link sau:
+
+                https://tuyensinh.hou.edu.vn/tintucchitiet/BT283/
+
+                Chúc em sức khỏe và học tập tốt.
+  utter_hoc_210:
+  -  
+       text: |-
+               Hiện nay Trường mới có kế hoạch tuyển sinh đợt 1 bạn nhé
+
+                Và việc xét học bạ nhà trường sẽ có thông báo sau, bạn có thể xem các hệ đào tạo khác của Đại học Mở. Bạn quan tâm thì rất mong bạn xem trên trang tuyển sinh của nhà trường
+
+                Chúc bạn thành công!
+  utter_hoc_211:
+  -  
+       text: |-
+               xét theo kết quả Học bạ THPT (cột trung bình cả năm) lớp 12
+
+                - Đối với các ngành chung:
+
+                Điểm xét tuyển = điểm môn 1 + điểm môn 2 + điểm môn 3
+
+                Trong đó: Tổng điểm 3 môn xét tuyển đạt từ 18 điểm trở lên;
+
+  utter_hoc_212:
+  -  
+       text: |-
+                Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. 
+
+                Sau ngày 15.10 nếu ngành nào còn thiếu sinh viên thì mới xét tiếp đợt 2 em ạ.
+
+                Tuy nhiên thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_213:
+  -  
+       text: |-
+                Điểm xét tuyển chưa phải là điểm chuẩn em nhé.
+
+                Trường Đại học Mở Hà Nội công bố điểm trúng tuyển đợt 1 đại học chính quy năm 2020 và các tiêu chí phụ đi kèm. Thí sinh có thể truy cập website https://tuyensinh.hou.edu.vn/tracuu2020 để tra cứu kết quả trúng tuyển.
+
+                Chúc em sớm trở thành sinh viên khoa CNTT nhé!
+  utter_hoc_214:
+  -  
+       text: |-
+               Chào anh/chị
+
+                  Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. 
+
+                  Sau ngày 15.10 nếu ngành nào còn thiếu sinh viên thì mới xét tiếp đợt 2.
+
+                  Tuy nhiên thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy
+
+                  Anh/chị có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                  Chúc anh/chị sức khỏe.
+  utter_hoc_215:
+  -  
+       text: |-
+              Công tác tuyển sinh được thực hiện đúng theo quy định, Hiện bạn đã đỗ ngành QTKD - đây là một ngành mà Khoa Kinh tế có kinh nghiệm và chất lượng đã được đạt được đúng theo kiểm định của Bộ giáo dục. Khi học hết kỳ 1 bạn có thể đăng ký học song bằng ngành TMĐT
+
+                 Chúc bạn thành công! 
+  utter_hoc_216:
+  -  
+       text: |-
+                  Mời em tham khảo thông tin tại link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT288/ - https://tuyensinh.hou.edu.vn/
+
+                  Hoặc gọi điện thoại tới Phòng Tuyển sinh - Trung tâm Phát triển Đào tạo (Phòng A 1.1)
+
+                  Địa chỉ : Nhà B101, Nguyễn Hiền, Hai Bà Trưng, Hà Nội
+
+                  Điện thoại: 0243. 868 2982  - 0243. 868 1855
+
+                  Email: ttptdt@hou.edu.vn
+  utter_hoc_217:
+  -  
+       text: |-
+                  Khu Giảng đường của khoa Tiếng Trung Quốc có địa chỉ tại: Nhà B, số 193 Vĩnh Hưng, Hoàng Mai, Hà Nội.
+
+                  Em có thể tham khảo thêm các thông tin về Khoa Tiếng Trung Quốc tại địa chỉ: http://khoatiengtrungquoc.hou.edu.vn/ hoặc tại cổng thông tin tuyển sinh của Nhà trường: https://tuyensinh.hou.edu.vn/
+
+                  Chúc em thành công.
+  utter_hoc_218:
+  -  
+       text: |-
+              Chào em! Ban tư vấn tuyển sinh trả lời câu hỏi của em.
+
+                Em cho biết em đăng ký xét tuyển theo hình thức nào? Nếu em đăng ký xét tuyển theo hình thức học bạ thì hiện nay nhà trường chưa có thông báo điểm chuẩn nên em chưa thể tra được trên webside. Em thường xuyên cập nhật vào tuyensinh.hou.edu.vn để biết thông tin nhé.
+
+                Cám ơn em đã gửi câu hỏi. 
+  utter_hoc_219:
+  -  
+       text: |-
+              Chào em,
+
+                Thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội 
+  utter_hoc_220:
+  -  
+       text: |-
+                Xác nhận của chính quyền chính là xác nhận của Ủy ban nhân dân Phường mà em đang sinh sống và học tập nhé!
+  utter_hoc_221:
+  -  
+       text: |-
+                Trường Đại học Mở Hà Nội công bố điểm trúng tuyển đợt 1 đại học chính quy năm 2020 và các tiêu chí phụ đi kèm. Thí sinh có thể truy cập website https://tuyensinh.hou.edu.vn/tracuu2020 để tra cứu kết quả trúng tuyển.
+
+                Chúc em sớm trở thành sinh viên trường ĐH Mở HN  nhé!
+  utter_hoc_222:
+  -  
+       text: |-
+                 Khoa Kinh tế học tại Số 193 Vĩnh Hưng, Quận Hoàng Mai, TP Hà Nội nhé!
+  utter_hoc_223:
+  -  
+       text: |-
+               
+  utter_hoc_224:
+  -  
+       text: |-
+               Sau ngày 14/10 khi nhà trường tổ chức nhập học đợt 1 xong, nếu còn chỉ tiêu nhà trường sẽ thông báo xét tuyển bổ sung trên trang web của trường em nhé.  
+  utter_hoc_225:
+  -  
+       text: |-
+              Hiện nay nhà trường đã hết hạn nộp hồ sơ xét tuyển bằng học bạ. Sau ngày 14/10 khi nhà trường tổ chức nhập học đợt 1 xong, nếu còn chỉ tiêu nhà trường sẽ thông báo xét tuyển bổ sung trên trang web của trường em nhé.  
+  utter_hoc_226:
+  -  
+       text: |-
+                Thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+  utter_hoc_227:
+  -  
+       text: |-
+               Đào tạo từ xa được cấp bằng Tốt nghiệp hình thức giống bằng chính quy. Cụ thể hơn về cách đăng kí học và hình thức học tập em liên lạc với thầy cô theo số liên hệ sau: (024) 38682320
+
+
+  utter_hoc_228:
+  -  
+       text: |-
+               
+  utter_hoc_229:
+  -  
+       text: |-
+                Ngành Kế toán thuộc Khoa Kinh tế - Trường ĐH Mở Hà Nội, địa điểm học tập tại Số 193 Vĩnh Hưng, Quận Hoàng Mai, TP Hà Nội.
+
+                Theo dõi trong đề án tuyển sinh của trường em có thể thấy mức học phí của nhà trường có các mức khác nhau tùy từng ngành đào tạo, em có thể theo dõi tại đây https://tuyensinh.hou.edu.vn/upload_image/files/2020/Ph%E1%BA%A7n%20II_%C4%90%E1%BB%81%20%C3%A1n%20TS2020.pdf
+
+                Chào mừng em là tân sinh viên của Khoa Kinh tế - ĐH Mở Hà Nội!
+  utter_hoc_230:
+  -  
+       text: |-
+               Mời em tham khảo thông tin tại link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT265/ - https://tuyensinh.hou.edu.vn/
+
+                Hoặc gọi điện thoại tới Phòng Tuyển sinh - Trung tâm Phát triển Đào tạo (Phòng A 1.1)
+
+                Địa chỉ : Nhà B101, Nguyễn Hiền, Hai Bà Trưng, Hà Nội
+
+                Điện thoại: 0243. 868 2982  - 0243. 868 1855
+
+                Email: ttptdt@hou.edu.vn
+  utter_hoc_231:
+  -  
+       text: |-
+                Khu giảng đường Khoa Du lịch: Nhà X1, X2, 301 Nguyễn Trãi, Thanh Xuân, Hà Nội.
+                Em đăng ký ký túc xá online tại website: tuyensinh.hou.edu.vn
+                Chào đón em đến với HOU. 
+
+  utter_hoc_232:
+  -  
+       text: |-
+               Sau ngày 14/10 khi nhà trường tổ chức nhập học đợt 1 xong, nếu còn chỉ tiêu nhà trường sẽ thông báo xét tuyển bổ sung trên trang web của trường em nhé
+  
+  utter_hoc_233:
+  -  
+       text: |-
+               Trường Đại học Mở Hà Nội công bố điểm trúng tuyển đợt 1 đại học chính quy năm 2022 và các tiêu chí phụ đi kèm. Thí sinh có thể truy cập website https://tuyensinh.hou.edu.vn/tracuu2020 để tra cứu kết quả trúng tuyển.
+                     Chúc em sớm trở thành sinh viên khoa CNTT nhé!
+  utter_hoc_234:
+  -  
+       text: |-
+               >> Điều kiện để được xét tuyển:
+                + Tốt nghiệp THPT hoặc tương đương
+                + Tổng điểm trung bình năm học lớp 12 của 3 môn trong tổ hợp dùng để xét tuyển:
+                      - Ngành Dược >= 20 điểm
+                    - Các ngành có môn Năng khiếu vẽ bao gồm Thiết kế đồ họa, Thiết kế nội thất, Thiết kế thời trang, Kiến trúc >= 24 điểm (điểm môn Năng khiếu vẽ tính hệ số 2)
+                      - Các ngành khác >=18 điểm
+
+  utter_hoc_235:
+  -  
+       text: |-
+              Trường Đại học Mở Hà Nội công bố điểm trúng tuyển đợt 1 đại học chính quy năm 2020 và các tiêu chí phụ đi kèm. Thí sinh có thể truy cập website https://tuyensinh.hou.edu.vn/tracuu2020 để tra cứu kết quả trúng tuyển. 
+  utter_hoc_236:
+  -  
+       text: |-
+               Chào em! Ban tuyển sinh sẽ gọi điện để tư vấn trực tiếp cho em.
+
+  
+  utter_hoc_237:
+  -  
+       text: |-
+               Rất tiếc là năm nay nhà trường không thực hiện xét học bạ đối với hai ngành CNKT Điện tử - Viễn thông và CNKT Điều khiển Tự động hóa em nhé.
+
+
+  utter_hoc_238:
+  -  
+       text: |-
+              Mới đây nhà trường đã công bố điểm trúng tuyển đợt 1 của tất cả các ngành. Ban tuyển sinh tư vấn em 2 phương án sau:
+
+                1) Em có thể đợi đến xét tuyển đợt 2. Trong trường hợp xét tuyển đợt 1 chưa đủ chỉ tiêu tuyển sinh, nhà trường sẽ mở đợt xét tuyển đợt 2 và công bố mức điểm xét tuyển đợt 2.
+
+                2) Em có thể đăng kí học vào ngành học xét học bạ của trường, ví dụ: thiết kế công nghiệp, Công nghệ sinh học, Kiến trúc, Công nghệ thực phẩm. Sau đó sẽ đăng kí học hình thức song bằng (Cùng 1 lúc vừa học ngành nộp học bạ và ngành Quản trị kinh doanh). Đến khi tốt nghiệp em sẽ cùng lúc có 2 tấm bằng đại học chính quy.
+
+                Trên đây chỉ là phương án tham khảo, chúc em có cho mình quyết định đúng đắn! 
+  
+  utter_hoc_239:
+  -  
+       text: |-
+          Hiện nay nhà trường có hỗ trợ học từ xa theo phường thức E-Leaning em nhé!
+          E có thể đăng kí theo học tại đây: http://elc.ehou.edu.vn/
+               
+  utter_hoc_240:
+  -  
+       text: |-
+               Mời em tham khảo thông tin tại link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT288/ - https://tuyensinh.hou.edu.vn/
+  utter_hoc_241:
+  -  
+       text: |-
+               Theo quy định của Bộ Giáo dục và Đào tạo, em đỗ nguyện vọng nào thì em phải học nguyện vọng đó chứ không đổi được nguyện vọng em nhé
+ 
+  utter_hoc_242:
+  -  
+       text: |-
+               Năm nay điểm dự kiến ngành Marketing là 20 điểm em nhé
+
+  utter_hoc_243:
+  -  
+       text: |-
+               Rất tiếc là năm 2020 nhà trường không thực hiện xét học bạ đối với hai ngành CNKT Điện tử - Viễn thông và CNKT Điều khiển Tự động hóa em nhé.
+
+
+  utter_hoc_244:
+  -  
+       text: |-
+                Năm nay điểm dự kiến ngành CNTT là 22 điểm em nhé
+
+  utter_hoc_245:
+  -  
+       text: |-
+               Hiện nay danh sách xét tuyển học bạ ngành Thiết kế công nghiệp chưa được cập nhật trên mạng nên em chưa tra được em nhé.
+  
+  utter_hoc_246:
+  -  
+       text: |-
+                Năm nay điểm dự kiến ngành Kế toán là 19 điểm em nhé
+
+  utter_hoc_247:
+  -  
+       text: |-
+               Hiện nay trường ĐH Mở HN đang làm thủ tục nhập học cho sinh viên trúng tuyển. 
+
+               Sau ngày 15.10 nếu ngành nào còn thiếu sinh viên thì mới xét tiếp đợt 2 em ạ.
+
+  utter_hoc_248:
+  -  
+       text: |-
+                Năm nay điểm dự kiến ngành DTTT là 21.5 điểm em nhé
+
+  utter_hoc_249:
+  -  
+       text: |-
+               Các thông tin về việc xét tuyển đợt 2 nếu có thì phải đợi sau ngày 15.10 em nhé. Cảm ơn em đã yêu quý nhà trường
+  utter_hoc_250:
+  -  
+       text: |-
+               Tiêu chí phụ (môn hình họa 5,5) điều kiện để xét như sau : với 2 thí sinh bằng điểm nhau và bằng điểm sàn còn nếu em đã đủ điểm trúng tuyển thì không phải xét đến tiêu chí phụ nữa.
+
+               Cám ơn em đã gửi câu hỏi.
+  utter_hoc_251:
+  -  
+       text: |-
+               Trong quá trình học, em có thể đăng kí học hình thức song bằng với các ngành học khác trong trường. Kết thúc thời gian học em sẽ có 02 bằng đại học chính quy nhé. Đây là một phương án khá hợp lý, em có thể tham khảo.
+  
+  utter_hoc_252:
+  -  
+       text: |-
+               em có thể đỗ các khoa CNTT,DTTT,Kế Toán...em nên tra cứu điểm chuển của trường nhé
+
+  utter_hoc_253:
+  -  
+       text: |-
+               1. Em kiểm tra lại danh sách các nguyện vọng em đã đăng ký trên hệ thống của Bộ GD&ĐT
+
+                2. So sánh với điểm chuẩn của các trường em đã đăng ký
+
+                Nếu em thấy mình đủ điểm trúng tuyển vào trường nào thì hãy vào trang web của trường đó để tra cứu danh sách trúng tuyển em nhé
+  utter_hoc_254:
+  -  
+       text: |-
+               Em cho biết em đăng ký xét tuyển theo hình thức nào? Nếu em xét tuyển theo hình thức học bạ thì hiện nay nhà trường chưa công bố điểm chuẩn xét tuyển và chưa cập nhật trên cổng thông tin tuyển sinh nên em chưa thể tra được điểm. Em được 21,25 điểm là số điểm khá cao, ban tuyển sinh tin là em có cơ hội trúng tuyển.
+  utter_hoc_255:
+  -  
+       text: |-
+               Hiện nay nhà trường chưa có thông tin chính thức về kết quả trúng tuyển theo hình thức thi THPT. Em thường xuyên cập nhật cổng thông tin tuyển sinh của nhà trường tuyensinh.hou.edu.vn để biết chi tiết nhé.
+  utter_hoc_256:
+  -  
+       text: |-
+               Hiện đã hết hạn điều chỉnh nguyện vọng rồi em ạ 
+
+
+  utter_hoc_257:
+  -  
+       text: |-
+               Nếu trước đó  em chưa đăng ký NV nào vào ngành CNKT Điện tử - Viễn thông thì rất tiếc là không được em nhé
+
+               Thân mến!
+
+
+  utter_hoc_258:
+  -  
+       text: |-
+               Em kiểm tra lại xem các NV trước NV vào ngành QTKD của mình có trúng tuyển không nhé
+
+
+  utter_hoc_259:
+  -  
+       text: |-
+              Trường Đại học Mở Hà Nội công bố điểm trúng tuyển đợt 1 đại học chính quy năm 2020 và các tiêu chí phụ đi kèm. Thí sinh có thể truy cập website https://tuyensinh.hou.edu.vn/tracuu2020 để tra cứu kết quả trúng tuyển.
+
+ 
+  utter_hoc_260:
+  -  
+       text: |-
+               Thí sinh không đủ điểm xét đại học chính quy 2020 vẫn có thể theo học tại trường theo hình thức đào tạo phi chính quy em nhé. 
+                Em có thể tham khảo và đăng ký theo link sau: https://tuyensinh.hou.edu.vn/tintucchitiet/BT205/
+                Chúc em sớm trở thành sinh viên của trường ĐH Mở Hà Nội
+
+  utter_em_muongi:
+  - 
+    text : |-
+           Vậy em muốn tư vấn gì thế?
+
+  utter_em_muon_hoc:
+  - 
+    text : |-
+           Có phải ý em là đăng ký học đúng không?
+    buttons: 
+    - title: "Vâng"
+      payload: /yesno_muonhoc
+    - title: "Không"
+      payload: /yesno_kohoc
+
+  utter_hoixet_hinhthuc_nao:
+  - text : |-  
+           Trường xét cả hai em nhé, em muốn xét điểm học bạ hay điểm thi THPTQG? 
+    buttons:
+    - 
+      payload: /xet_hocba
+      title: "Học Bạ"
+    - 
+      payload: /xet_thptqg
+      title: "THPTQG"
+
+       
+
+  utter_diemdotruot:
+  - 
+    text : |-
+           Với điểm như vậy em không trúng tuyển vào trường rồi!
+
+  utter_diemdo2:
+  - 
+    text : |-
+           Chúc mừng em nhé!.Với mức điểm từ 21-30.5 em có nhiều khả năng đỗ các ngành em mơ ước
+           Để biết chi tiết hơn em xem tại liên kết này: https://diemthi.tuyensinh247.com/diem-chuan/vien-dai-hoc-mo-ha-noi-MHN.html
+
+  utter_diemdo1:
+  - 
+    text : |-
+           Với mức điểm từ 15-20.5 em chỉ đỗ các ngành sau:
+           Công nghệ sinh học
+           Công nghệ thực phẩm
+           Công nghệ kỹ thuật điện tử - viễn thông
+           Công nghệ kỹ thuật điều khiển và tự động hóa
+           Kiến trúc
+           Để biết chi tiết hơn em xem tại liên kết này: https://diemthi.tuyensinh247.com/diem-chuan/vien-dai-hoc-mo-ha-noi-MHN.html
+
+  utter_hoidiemdo:
+  - 
+    text : |-
+           Em được tổng bao nhiêu điểm trong kì thi THPTQG nhỉ?
+
+  utter_kitucxa:
+  - 
+    text : |-
+           Rất tiếc, nhà trường chưa có KTX em nhé.Vì vậy em có thể thuê ngoài nha em!
+# //hanh dong mac dinh > file config.yml >action_default_fallback
+  utter_default:
+  - 
+    text : |-
+           Xin lỗi, trường không hiểu ý em.
+           Để được giải đáp thắc mắc em vui lòng liên hệ tổ tư vấn ĐH Mở Hà Nội theo 
+           SDT: 0243. 868 2982  - 0243. 868 1855 hoặc gửi về Email: ttptdt@hou.edu.vn
+           Trân trọng!
+
+  utter_hoc_daihoc:
+  - 
+      text: |-
+            Đào tạo trình độ Đại học được thực hiện từ 4 đến 6 năm học tùy theo ngành nghề đào tạo đối với người có 
+            bằng tốt nghiệp trung học phổ thông hoặc bằng tốt nghiệp trung cấp.
+
+  utter_hoc_caodang: 
+  - 
+      text: |-
+            Thời gian khoá học đối với trình độ cao đẳng từ 2 đến 3 năm học và phải đảm bảo khối lượng kiến thức tối 
+            thiểu theo từng ngành, nghề đào tạo là 60 tín chỉ em nhé!
+  
+  utter_xet_hocba: 
+  - 
+      text: |-
+            Xét học bạ THPT
+            Các ngành áp dụng là: Công nghệ sinh học, Công nghệ thực phẩm, Thiết kế công nghiệp (xét kết hợp).
+            Đăng ký xét học bạ online tại: https://tuyensinh.hou.edu.vn/xthb2020/
+
+  utter_greet:
+  - text: "Chào em! em cần trợ giúp gì hôm nay?"
+  - text: "Chào, Tôi là Chatbot tôi sẽ giúp bạn tư vấn tuyển sinh!"
+  - text: "Chào mừng em đến với Đại Học Mở Hà Nội!"
+  - text: "Tôi có thể giúp gì cho bạn hôm nay?"
+  - text: "Chào, tôi là trợ lý tuyển sinh RASA!"
+  - text: "Chào, tôi là trợ lý Assistant ĐH Mở Hà Nội!"
+  - text: "Chào, tôi là trợ lý Trường ĐH Mở Hà Nội!"
+  - text: "Chào, tôi từ tổ tư vấn tuyển sinh, tôi có thể giúp gì cho em hôm nay?"
+
+#kịch bản "đăng ký" chưa biết đăng kí học ngành nào
+  # utter_dang_ky_hoc:
+  utter_ask_dk_nganh:
+  - text: "Em muốn đăng ký học ngành nào nhỉ? \n\
+          \x20 Dưới đây là các ngành chính của trường "
+    buttons: 
+    - title: "CNTT"
+      payload: /dk_cntt
+    - title: "Kế toán"
+      payload: /dk_ketoan
+    - title: "Thiết kế công nghiệp" 
+      payload: /dk_tkcn
+    - title: "Tài chính ngân hàng"       
+      payload: /dk_tcnh
+    - title: "Quản trị kinh doanh"  
+      payload: /dk_qtkd
+    - title: "Thương mại điện tử"  
+      payload: /dk_tmdt
+    - title: "Luật"  
+      payload: /dk_luat
+    - title: "Luật kinh tế"    
+      payload: /dk_luatkt
+    - title: "Công nghệ sinh học"
+      payload: /dk_cnsh
+    - title: "Công nghệ thực phẩm"
+      payload: /dk_cntp
+    - title: "Công nghệ kỹ thuật điện tử-viễn thông"
+      payload: /dk_ktdtvt
+    - title: "Kiến trúc"
+      payload: /dk_kientruc
+    - title: "Quản trị dịch vụ du lịch và lữ hành"
+      payload: /dk_dulich
+    - title: "Ngôn ngữ Anh"
+      payload: /dk_anh
+    - title: "Ngôn ngữ Trung Quốc"
+      payload: /dk_trung
+
+      
+
+#kịch bản "tư vấn" >chưa biết ng hỏi muốn tư vấn gì
+  utter_tuvan:
+  - text: "Em muốn tư vấn gì nhỉ? \n\
+          \x20 Dưới đây là các vấn đề tư vấn thường gặp: "
+    buttons: 
+    - title: "Ngành học"
+      payload: /tuvan_nganhhoc
+      # //em muon tu vân nganh nao? > cntt >moi em nhap cua hoi > diem chuan bn nhieu ,hoc phi?
+    - title: "Chương trình đào tạo"
+      payload: /tuvan_ctdt
+    - title: "Học phí" 
+      payload: /tuvan_hocphi
+    - title: "Điểm chuẩn"       
+      payload: /tuvan_diemchuan
+    - title: "Học Thạc sĩ"  
+      payload: /tuvan_hocthacsi
+    - title: "Học Online"  
+      payload: /tuvan_hoctuxa
+    - title: "Nộp hồ sơ"  
+      payload: /tuvan_hoso
+    - title: "Khác"    
+      payload: /tuvan_khac
+# cac van de khac
+      
+  # utter_ask_dk_nganh: 
+  #   - 
+  #     text: "Em muốn đăng ký học ngành nào vậy em?"
+
+  utter_ask_dk_sodt: 
+  - text: "Số điện thoại của em là gì?"
+      # utter_ask la bat buoc cho form gep voi intent nhap_ten
+  utter_ask_dk_name: 
+  - text: "Vui lòng cho trường biết tên em không?"
+
+  utter_ask_dk_email: 
+  - text: "Nhập địa chỉ Email của em"
+
+  utter_ask_dk_diachi: 
+  - text: "Nhập địa chỉ nơi em đang ở?"
+
+
+  utter_diemchuan:
+  - text: "Em tham khảo nhé:"
+    image: "https://i.ibb.co/9HM5CJz/tuyensinh247-com.png"
+
+  utter_nophoso:
+  - 
+    text: |
+          Có 2 cách nộp hồ sơ em nhé: em có thể gửi hồ sơ đăng ký qua bưu điện đến địa chỉ của trường hoặc nộp hồ sơ trực tiếp tại ban tuyển sinh của nhà trường nhé.
+          Người học nhận 02 phiếu xét tuyển theo mẫu của Trường Đại học Mở Hà Nội (nhận trực tiếp tại văn phòng tuyển sinh, qua mail hoặc có thể download trên trang Website: elc.ehou.edu.vn; tuyensinh.ehou.edu.vn).
+          Người học hoàn chỉnh thông tin đầy đủ các nội dung yêu cầu ở phiếu đăng ký xét tuyển (dán ảnh và có xác nhận của chính quyền địa phương hoặc cơ quan đang công tác).
+          Giấy tờ cần nộp:
+          + Phiếu đăng ký tham gia học tập có xác nhận của chính quyền địa phương hoặc cơ quan đang công tác (có thể in mẫu trên website: www.ehou.edu.vn);
+          + Bản sao công chứng văn bằng cao nhất (tính đến bằng Đại học) (không nộp bản chính);
+          + Bản sao chứng minh thư nhân dân/ căn cước công dân;
+          + Bản sao công chứng văn bằng Lý luận Chính trị (nếu có) (không nộp bản chính);
+          + Ảnh 3x4 ghi rõ họ tên, ngày sinh, nơi sinh (không kể ảnh dán trên phiếu đăng ký);
+            Nếu người học vì lý do đặc biệt chưa nộp đủ hồ sơ xét tuyển muốn vào học sớm, yêu cầu làm bản cam kết hoàn thiện hồ sơ. Khi nộp đủ hồ sơ nhà trường sẽ tổ chức xét tuyển và ra quyết định nhập học, sinh viên chưa hoàn thiện hồ sơ chưa được thi kết thúc học phần. Thời gian tốt nghiệp căn cứ vào ngày ghi trên quyết định khi nộp hồ sơ xét tuyển. 
+
+  utter_hocphi:
+  - 
+    text: |
+          Trường Đại học Mở Hà Nội thu học phí theo quy định của nhà nước đối với trường Đại học Công lập tự chủ toàn diện theo Quyết định số 941/QĐ-TTg ngày 03/07/2017 của Thủ tướng chính phủ. Cụ thể: Năm học 2021-2022, mức học phí là 14.349.500đ/năm; 378.000đ/tín chỉ (Tổng tín chỉ toàn khóa học là 135 tín chỉ - chưa tính GDTC - GDQP).
+
+  utter_ctdt:
+  - 
+    text: |
+          Các ngành đào tạo gồm:
+           CNTT
+           Kế toán
+           Thiết kế công nghiệp
+           Tài chính ngân hàng
+           Quản trị kinh doanh
+           Thương mại điện tử
+           Luật
+           Luật kinh tế
+           Luật quốc tế
+           Công nghệ sinh học
+           Công nghệ thực phẩm
+           Công nghệ kỹ thuật điện tử-viễn thông
+           Kiến trúc
+           Quản trị dịch vụ du lịch và lữ hành
+           Ngôn ngữ Anh
+           Ngôn ngữ Trung
+
+
+  utter_hoithacsi:
+  - 
+    text: |
+          Em đã tốt nghiệp trình độ đại học chưa?
+
+  utter_thacsi_ok:
+  - 
+    text: |
+          Chúc mừng em! em đủ điều kiện để học Thạc sĩ!
+          Khi học Thạc sĩ ở trường DH Mở Hà Nội em sẽ được học tiếp các chương trình đào tạo bậc Thạc sĩ tại Việt Nam (tham khảo Quyết định 45/2008/QĐ-BGDĐT về Đào tạo trình độ Thạc sĩ, điều 11).
+
+  utter_thacsi_no:
+  - 
+    text: |
+          Rất tiếc chương trình đào tạo học Thạc sĩ chỉ áp dụng cho hai trường hợp sau:
+          Học thạc sĩ ngay sau khi tốt nghiêp và Học thạc sĩ sau khi đi làm
+
+# kich bản học online> chua biết người hỏi muốn hỏi gì
+  utter_hoconline:
+  - text: "Dưới đây là các câu hỏi thường gặp khi học Online \n\
+          \x20"
+    buttons: 
+    - title: "Địa điểm học và thi"
+      payload: /online_diemthi
+    - title: "Các ngành đào tạo"
+      payload: /online_cacnganh_online
+    - title: "Học phí" 
+      payload: /online_hocphi
+    - title: "Đăng kí học Online"       
+      payload: /online_dangki
+    - title: "Thủ tục đăng ký"  
+      payload: /online_thutuc_dangki
+    - title: "Thủ tục nhập học"   
+      payload: /online_thutuc_nhaphoc
+
+      
+
+  utter_chuong_trinh_daotao:
+  - text: "Hiện trường có hai chương trình đào tạo là: Đào tạo tại trường và Đào tạo từ xa (E-Learning - Online)\n\
+          \x20Em muốn biết các ngành đào tạo nào vậy?"
+    buttons:  
+    - title: "Các ngành đào tạo tại trường"  
+      payload: /tuvan_ctdt
+    - title: "Các ngành đào tạo từ xa"   
+      payload: /online_cacnganh_online
+
+
+  utter_online_thutuc_dangki:
+  - 
+    text: |
+          Thủ tục đăng ký
+          Hồ sơ đăng ký xét tuyển bao gồm:
+          Phiếu đăng ký tham gia học tập có xác nhận của chính quyền địa phương hoặc cơ quan đang công tác (có thể in mẫu trên website: 
+          Bản sao công chứng văn bằng cao nhất (tính đến bằng Đại học) (không nộp bản chính);
+          Bản sao chứng minh thư nhân dân/ căn cước công dân;
+          Bản sao công chứng văn bằng Lý luận Chính trị (nếu có) (không nộp bản chính);
+          Ảnh 4×6 ghi rõ họ tên, ngày sinh, nơi sinh (không kể ảnh dán trên phiếu đăng ký);
+
+          Lưu ý:
+          Hồ sơ đã nộp và đã được xét tuyến, nếu sinh viên không theo học, sẽ không được trả lại.
+          Nhà trường chỉ xét tuyển và ra quyết định công nhận sinh viên khi nhận đủ hồ sơ và phí xét tuyển.
+
+  utter_online_thutuc_nhaphoc:
+  - text: "Thủ tục nhập học:"
+    image: "https://i.ibb.co/GQNzkwX/thutucnhaphoc-ehou.png"
+
+  utter_online_hocphi:
+  - text: "Mức học phí EHOU được qui định như sau:"
+    image: "https://i.ibb.co/njVrdCV/TB-9320-TTEL-H-c-ph-n-m-h-c-2020-2021.jpg"
+          
+
+  utter_cacnganh_online:
+  - 
+    text: |
+          Chương trình đào tạo từ xa gồm các ngành chính sau:
+          Kế toán
+          Quản trị kinh doanh
+          Tài chính ngân hàng
+          Công nghệ thông tin
+          Luật
+          Luật kinh tế
+          Ngôn ngữ Anh
+          Quản trị dịch vụ du lịch và lữ hành
+
+
+  utter_diemthi:
+  - 
+    text: |
+          Danh sách các điểm học và thi gồm: Hà Nội, HCM, Phú yên, Đà nẵng, Nha trang, Gia Lai, Quang binh, Ha tinh,
+          Nghe an, Ninh binh, Vinh phúc, Quảng ninh, Bắc ninh, Bắc Giang, Điện biên, Hải dương
+          
+          Em muốn học và thi tại địa điểm nào?
+
+  utter_diemthino:
+  - 
+    text: |
+          Rất tiếc, không có điểm thi tại tỉnh/thành này.
+
+  utter_hanoi:
+  - 
+      text: |-
+            Tại Hà Nội
+            Khoa Tài chính Ngân hàng
+            Địa chỉ: Tòa nhà An & Huy, Lô GD 1-3, Ngọc Hồi, Thanh Trì, Hà Nội.
+            Khoa Công nghệ - Điện tử thông tin
+            Địa chỉ: Số 62 Phố Phan Đình Giót, Q. Thanh Xuân, Hà Nội
+            Trường Cao đẳng Công thương Hà Nội
+            Địa chỉ: Số 54A1, Đường Vũ Trọng Phụng, Q. Thanh Xuân, Hà Nội
+            Trường Trung cấp Kinh tế Đối ngoại
+            Địa chỉ: Số 23, Ngõ 167 Tây Sơn, Q. Đống Đa, Hà Nội.
+            Trung tâm GD Nghề - Giáo dục thường xuyên Đông Anh
+            Địa chỉ: Đường Cao Lỗ, Xã Uy Lỗ, Huyện Đông Anh, Hà Nội
+            Trường Trung cấp Kinh tế - Kỹ thuật Bắc Thăng Long
+            Địa chỉ: Xã Kim Chung, Huyện Đông Anh, Hà Nội
+            Trường Trung cấp Future
+            Địa chỉ: Tòa Nhà VAPA, ngõ 3, Tôn Thất Thuyết, Dịch Vọng Hậu, Cầu Giấy, Hà Nội
+            Trung tâm Giáo dục Nghề nghiệp – Giáo dục thường xuyên Phú Xuyên
+            Địa chỉ: Thôn Nam Quất - xã Nam Triều - Huyện Phú Xuyên - Hà Nội
+            Viện Đào tạo và Phát triển Giáo dục Việt Nam
+            Địa chỉ: Số 4, Khu nhà 39 Nguyễn Trãi, Khương Trung, Thanh Xuân, Hà Nội.
+
+  utter_hcm:
+  - 
+      text: |-
+            Tại TP Hồ Chí Minh:
+            Trung tâm Giáo dục thường xuyên Tôn Đức Thắng
+            Địa chỉ: 37/3-37/5 Ngô Tất Tố, P. 21, Q. Bình Thạnh, TP.HCM
+            Website: gdtxtonducthang.edu.vn 
+            Trường Trung cấp Mai Linh
+            Địa chỉ: Số 162 Lê Thị Riêng, P. Thới An, Quận 12, TP.HCM
+            Trường Trung cấp Tin học Sài Gòn
+            Địa chỉ: Số 12-14 Nguyễn An Ninh, Q. Bình Thạnh, TP.HCM
+            Trường Cao đẳng sư phạm Trung ương Tp.HCM
+            Địa chỉ: Số 182 Nguyễn Chí Thanh, P.3, Q.10, Tp.HCM
+
+  utter_phuyen:
+  - 
+      text: |-
+            Tại Phú Yên: 
+            Trung tâm Giáo dục thường xuyên tỉnh Phú Yên
+            Địa chỉ: Nguyễn Huệ, Phường 2, TP. Tuy Hòa, Phú Yên
+
+  utter_danang:
+  - 
+      text: |-
+            Tại Đà Nẵng: 
+            Trung tâm Đại học Mở Hà Nội tại Đà Nẵng
+            Địa chỉ: 295 Nguyễn Tất Thành, Quận Hải Châu, TP. Đà Nẵng
+            Website: http://danang.hou.edu.vn/
+
+  utter_nhatrang:
+  - 
+      text: |-
+            Tại Nha Trang: 
+            Trường Trung cấp Kinh tế - Kỹ thuật Trần Đại Nghĩa
+            Địa chỉ: Số 1028 đường 2/4, P.Vĩnh Phước, TP.Nha Trang, Tỉnh Khánh Hòa.
+
+  utter_gialai:
+  - 
+      text: |-
+            Tại Gia Lai: 
+            Trung tâm Giáo dục thường xuyên tỉnh Gia Lai
+            Địa chỉ: Số 61 Lý Thái Tổ Thị xã Pleiku, P. Thống Nhất, TP. Pleiku, Gia Lai
+            Website: http://gdtxtinh.gialai.edu.vn/
+
+  utter_quangbinh:
+  - 
+      text: |-
+            Tại Quảng Bình: 
+            Trường Đại học Quảng Bình
+            Địa chỉ: 312 Lý Thường Kiệt, P. Bắc Lý, TP. Đồng Hới, Quảng Bình
+
+  utter_hatinh:
+  - 
+      text: |-
+            Tại Hà Tĩnh:
+            Trung tâm GDTX & Bồi dưỡng NVSP Tỉnh Hà Tĩnh
+            Địa chỉ: Số 8 ngõ 24, Nguyễn Công Trứ, P.Tân Giang, Hà Tĩnh.
+            Website: ttgdtxhatinh.edu.vn
+
+  utter_nghean:
+  - 
+      text: |-
+            Tại Nghệ An:
+            Trường Cao đẳng Việt Đức Nghệ An
+            Địa chỉ: 315 Lê Duẩn, Trường Thi, TP. Vinh, Nghệ An.
+            Website: http://cdvdna.edu.vn
+
+  utter_ninhbinh:
+  - 
+      text: |-
+            Tại Ninh Bình:
+            Trường Trung cấp Kinh tế-Kỹ thuật & Du lịch Ninh Bình
+            Địa chỉ: Phường Bích Đào - TP Ninh Bình - tỉnh Ninh Bình
+            Website: ninhbinh.edu.vn/trungcapkinhte/ 
+
+  utter_vinhphuc:
+  - 
+      text: |-
+            Tại Vĩnh Phúc: 
+            Trung tâm Giáo dục thường xuyên tỉnh Vĩnh Phúc
+            Địa chỉ: Số 43, Chu Văn An, Liên Bảo, Vĩnh Yên, Vĩnh Phúc 
+            Website: www.gdtxtinhvinhphuc.edu.vn
+
+  utter_quangninh:
+  - 
+      text: |-
+            Tại Quảng Ninh: 
+            Trường Đào tạo Cán bộ Nguyễn Văn Cừ 
+            Địa chỉ: Vườn Đào, Bãi Cháy, TP. Hạ Long, Quảng Ninh
+            Website: daotaoquangninh.edu.vn
+
+  utter_haiphong:
+  - 
+      text: |-
+            Tại Hải Phòng:
+            Trường Cao đẳng Cộng đồng Hải Phòng
+            Địa chỉ: Số 264 Trần Nhân Tông, Nam Sơn, Kiến An, Hải Phòng
+            Trung tâm Giáo dục thường xuyên Hải Phòng.
+            Địa chỉ: Số 33, Nguyễn Đức Cảnh, An Biên, Lê Chân, Hải Phòng
+            Trung tâm Giáo dục Kỹ thuật Tổng hợp Hướng nghiệp Hải Phòng.
+            Địa chỉ: Số 138 Hai Bà Trưng, An Biên, Lê Chân, Hải Phòng
+
+  utter_dienbien:
+  - 
+      text: |-
+            Tại Điện Biên: 
+            Trung tâm Giáo dục thường xuyên tỉnh Điện Biên
+            Địa chỉ: Phường Thanh Bình - TP Điện Biên, tỉnh Điện Biên
+            Website: ttgdtxtinhdienbien.edu.vn
+
+  utter_haiduong:
+  - 
+      text: |-
+            Tại Hải Dương: 
+            Trung tâm  Giáo dục thường xuyên tỉnh Hải Dương
+            Địa chỉ:   310 Nguyễn Lương Bằng, TP. Hải Dương
+            Website: http://gdtxhaiduong.edu.vn/
+
+  utter_bacninh:
+  - 
+      text: |-
+            Tại Bắc Ninh:
+            Trung tâm Giáo dục thường xuyên tỉnh Bắc Ninh
+            Địa chỉ: Số 39 đường Nguyễn Đăng Đạo P. Suối Hoa – TP. Bắc Ninh, tỉnh Bắc Ninh 
+            Website: http://gdtxbacninh.bacninh.edu.vn/
+
+  utter_bacgiang:
+  - 
+      text: |-
+            Tại Bắc Giang:
+            Trung tâm Giáo dục thường xuyên tỉnh Bắc Giang
+            Địa chỉ: Số 832 đường Lê Lợi, Tp.Bắc Giang
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Rất mong bạn sẽ sớm trở lại với chúng tôi!"
+  - text: "Chúng tôi không thể chờ đợi, bạn luôn được chào đón!"
+  - text: "Cảm ơn bạn!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Tạm biệt!"
+  - text: "Chúng tôi rất tiếc về trải nghiệm của bạn chưa được tốt, chúng tôi sẽ cải tiến trong tương lai!"
+  - text: "Chúc bạn một ngày vui!"
+  - text: "Chúc bạn một buổi tối vui vẻ!"
+  - text: "Cảm ơn bạn đã đến với chúng tôi!"
+
+  utter_chitchat:
+  - text: "Xin lỗi, trường không thể giúp em được"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_delay:
+  - 
+    text : |-
+           Xin lỗi, mình không hiểu ý bạn.
+           Để được giải đáp thắc mắc vui lòng liên hệ tổ tư vấn ĐH Mở Hà Nội theo 
+           SDT: 0243. 868 2982  - 0243. 868 1855 hoặc gửi về Email: ttptdt@hou.edu.vn
+           Trân trọng!
+
+  utter_thanks_you: 
+  - text: "❤️Cảm ơn em trường đã nhận được thông tin của em, trường sẽ sớm liên hệ đến em!" 
+
+  utter_slots_values:
+  - 
+      text: |-
+            Dưới đây là thông tin của em:
+            Ngành đăng ký: {dk_nganh}
+            Họ tên: {dk_name}
+            SDT: {dk_sodt}
+            Email: {dk_email}
+            Địa chỉ: {dk_diachi}
+
+  utter_thanks_hoc: 
+  - text: "❤️Cảm ơn em trường đã nhận được thông tin của em, trường sẽ sớm liên hệ đến em!"     
+
+  utter_slots_hoc:
+  - 
+      text: |-
+            Dưới đây là thông tin đăng ký học của em:
+            Ngành đăng ký: {dk_nganh}
+            SDT: {dk_sodt}
+            Email: {dk_email}
+
+  utter_thanks_dk: 
+  - text: "❤️Cảm ơn em đã đăng ký, trường sẽ sớm liên hệ đến em!" 
+
+  utter_slots_dk:
+  - 
+      text: |-
+            Dưới đây là thông tin đăng ký của em:
+            Họ tên: {dk_name}
+            SDT: {dk_sodt}
+            Email: {dk_email}
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

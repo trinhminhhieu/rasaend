@@ -1,0 +1,1706 @@
+version: "2.0"
+
+nlu:
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hiiii
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - chào buổi chiều
+    - chào em
+    - chào anh
+    - chào chị
+    - chào
+    - xin chao
+    - xin chào
+    - xin chào bạn
+    - chào bạn
+    - chao ban
+    - xin chào ad
+    - xin chào admin
+    - chào ad
+    - chao ad
+    - ad ơi
+    - ad oi
+    - admin ơi
+    - chao
+    - bạn có ở đây không
+    - có ai ở đây không
+    - hihi
+    - mình có câu hỏi
+    - chào em yêu
+    - chào anh yêu
+    - admin
+    - chào ad
+    - chào admin
+    - hello ad
+    - hello admin
+    - xin chào admin
+    - mình có một câu hỏi
+    - mình cần tư vấn
+    - mình cần giúp đỡ
+    - alo
+
+- intent: goodbye
+  examples: |
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt bạn
+    - chúc bạn một ngày vui vẻ
+    - bạn làm rất Tốt
+    - hẹn gặp lại
+    - chúc bạn một ngày vui
+    - ấm áp nhé
+    - tôi yêu bạn
+    - yêu em
+    - yêu anh
+    - tạm biệt ạ
+    - cảm ơn ạ
+    - cảm ơn nhiều
+    - cảm ơn bạn
+
+
+- intent: chitchat
+  examples: |
+    - hôm nay thời thiết thế nào
+    - lol
+    - dm
+    - dmmmm
+    - em yêu
+    - em khỏe không
+    - bạn tên gì
+    - giúp em một việc dc k
+    - giúp em với
+    - trường có gái xinh k
+    - trường có trai đẹp không
+
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+#kịch bản "đăng ký" chưa biết đăng kí học ngành nào -->
+- intent: dang_ky_hoc
+  examples: |
+    - đăng ký
+    - dk
+    - Em muốn đăng ký học
+    - mình muốn đăng ký học
+    - em muốn đăng kí học
+    - mình muốn đăng kí học
+    - tôi muốn đăng ký học
+    - em muốn đăng ký theo học ở trường
+    - em muốn đăng ký xét tuyển
+    - em muốn đăng ký xét tuyển vào trường
+    - em muốn đăng kí xét tuyển
+    - em muốn dk xet tuyển
+    - em muốn dk học
+    - em muốn dk theo học
+    - em muốn dk xét tuyển vào trường
+    - em hỏi đăng ký học thế nào
+    - cho em hỏi đăng ký học như thế nào
+    - cho em hỏi em muốn đăng ký học thì như thế nào
+
+- intent: dk_cntt
+  examples: |
+    - Em muốn đăng ký học Công nghệ thông tin
+    - Em muốn xét tuyển Công nghệ thông tin
+    - xét tuyển Công nghệ thông tin
+    - Em muốn đăng ký học cntt
+    - dk học cntt
+    - dk cntt
+    - đăng ký cntt
+    - công nghệ thông tin
+    - học công nghệ thông tin
+    - cong nghe thong tin
+    - cntt
+    - CNTT
+    - DK CNTT
+
+- intent: dk_ketoan
+  examples: |
+    - Em muốn đăng ký học Kế toán
+    - Em muốn đăng ký học kế toán
+    - dk học kế toán
+    - dk kế toán
+    - đăng ký kế toán
+    - Kế toán
+    - học Kế toán
+    - ke toan
+    - kế toán
+    - DK kế toán
+
+- intent: dk_tkcn
+  examples: |
+    - Em muốn đăng ký học Thiết kế công nghiệp
+    - Em muốn đăng ký học TKCN
+    - dk học tkcn
+    - dk tkcn
+    - đăng ký tkcn
+    - Thiết kế công nghiệp
+    - học Thiết kế công nghiệp
+    - thiet ke cong nghiep
+    - tkcn
+    - TKCN
+    - DK tkcn
+
+- intent: dk_tcnh
+  examples: |
+    - Em muốn đăng ký học Tài chính-ngân hàng
+    - Em muốn đăng ký học tài chính ngân hàng
+    - dk TCNH
+    - đăng ký tcnh
+    - Tài chính-ngân hàng
+    - tai chinh ngan hang
+    - Tài chính ngân hàng
+    - học Tài chính ngân hàng
+    - tcnh
+    - TCNH
+    - DK TCNH
+
+- intent: dk_qtkd
+  examples: |
+    - Em muốn đăng ký học Quản trị kinh doanh
+    - Em muốn đăng ký học quản trị kinh doanh
+    - dk học qtkd
+    - dk qtkd
+    - đăng ký QTKD
+    - Quản trị kinh doanh
+    - học Quản trị kinh doanh
+    - quan tri kinh doanh
+    - qtkd
+    - QTKD
+    - DK QTKD
+
+- intent: dk_tmdt
+  examples: |
+    - Em muốn đăng ký học Thương mại điện tử
+    - Em muốn đăng ký học TMDT
+    - dk học tmdt
+    - dk tmdt
+    - đăng ký tmdt
+    - Thương mại điện tử
+    - thuong mai dien tu
+    - tmdt
+    - TMDH
+    - DK TMDH
+
+- intent: dk_luat
+  examples: |
+    - Em muốn đăng ký học Luật
+    - Em muốn đăng ký học luat
+    - dk học luật
+    - dk luat
+    - đăng ký luat
+    - Luật
+    - Luat
+    - luat
+    - DK Luat
+
+- intent: dk_luatkt
+  examples: |
+    - Em muốn đăng ký học Luật kinh tế
+    - Em muốn đăng ký học luật kinh tế
+    - dk học luật kinh tế
+    - dk luật kinh tế
+    - đăng ký luật kinh tế
+    - Luật kinh tế
+    - luat kinh te
+    - Luat kinh te
+    - DK Luat kinh te
+
+- intent: dk_cnsh
+  examples: |
+    - Em muốn đăng ký học Công nghệ sinh học
+    - Em muốn đăng ký học công nghệ sinh học
+    - dk học công nghệ sinh học
+    - dk công nghệ sinh học
+    - đăng ký công nghệ sinh học
+    - Công nghệ sinh học
+    - cong nghe sinh hoc
+    - cnsh
+    - CNSH
+    - DK CNSH
+
+- intent: dk_cntp
+  examples: |
+    - Em muốn đăng ký học Công nghệ thực phẩm
+    - Em muốn đăng ký học công nghệ thực phẩm
+    - dk học công nghệ thực phẩm
+    - dk công nghệ thực phẩm
+    - đăng ký công nghệ thực phẩm
+    - Công nghệ thực phẩm
+    - cong nghe thuc pham
+    - cntp
+    - CNTP
+    - DK CNTP
+
+- intent: dk_ktdtvt
+  examples: |
+    - Em muốn đăng ký học Công nghệ kỹ thuật điện tử-viễn thông
+    - Em muốn đăng ký học công nghệ kỹ thuật điện tử viễn thông
+    - dk học công nghệ kỹ thuật điện tử viễn thông
+    - dk công nghệ kỹ thuật điện tử viễn thông
+    - đăng ký công nghệ kỹ thuật điện tử viễn thông
+    - Công nghệ kỹ thuật điện tử-viễn thông
+    - Công nghệ kỹ thuật điện tử viễn thông
+    - cong nghe ky thuat dien tu vien thong
+    - dien tu vien thong
+    - cnktdtvt
+    - CNKTDTVT
+    - DK CNKTDTVT
+    - điện tử viễn thông
+    - kỹ thuật điện tử viễn thông
+
+
+- intent: dk_kientruc
+  examples: |
+    - Em muốn đăng ký học Kiến trúc
+    - Em muốn đăng ký học kiến trúc
+    - dk học kiến trúc
+    - dk kiến trúc
+    - đăng ký kiến trúc
+    - Kiến trúc
+    - kien truc
+    - kiến trúc
+
+- intent: dk_dulich
+  examples: |
+    - Em muốn đăng ký học Quản trị dịch vụ du lịch và lữ hành
+    - Em muốn đăng ký học du lịch và lữ hành
+    - dk học Quản trị dịch vụ du lịch và lữ hành
+    - dk Quản trị dịch vụ du lịch và lữ hành
+    - đăng ký Quản trị dịch vụ du lịch và lữ hành
+    - Quản trị dịch vụ du lịch
+    - Quản trị dịch vụ du lịch và lữ hành
+    - dịch vụ du lịch và lữ hành
+    - du lich lu hanh
+    - lu hanh
+    - lữ hành
+    - Du lịch và lữ hành
+    - Du lịch
+    - du lich
+
+- intent: dk_anh
+  examples: |
+    - Em muốn đăng ký học Ngôn ngữ Anh
+    - Em muốn đăng ký học ngôn ngữ anh
+    - dk học ngôn ngữ anh
+    - học ngôn ngữ anh
+    - dk ngôn ngữ anh
+    - đăng ký ngôn ngữ anh
+    - Ngôn ngữ Anh
+    - Ngôn ngữ Anh Quốc
+    - Tiếng Anh
+    - ngon ngu anh
+    - anh
+    - NN Anh
+    - nn anh
+    - DK NN Anh
+
+
+- intent: dk_trung
+  examples: |
+    - Em muốn đăng ký học Ngôn ngữ Trung
+    - Em muốn đăng ký học Ngôn ngữ Trung quốc
+    - Em muốn đăng ký học ngôn ngữ trung
+    - dk học ngôn ngữ trung
+    - học ngôn ngữ trung
+    - dk ngôn ngữ trung
+    - đăng ký ngôn ngữ trung
+    - Ngôn ngữ trung
+    - Ngôn ngữ Trung quốc
+    - ngon ngu trung
+    - trung
+    - tiếng Trung
+    - NN trung
+    - nn trung
+    - DK NN trung
+
+
+ #kịch bản tu van > chua biet ý dinh ng hoi tu van gi -->
+
+- intent: tuvan_ydinh
+  examples: |
+    - tư vấn giúp em
+    - tư vấn giúp em với
+    - tư vấn giúp mình
+    - tư vấn giúp mình với
+    - em muốn tư vấn
+    - em cần tư vấn
+    - tư vấn
+    - tu van
+    - tu van giup em
+    - tôi cần tư vấn
+    - trường tư vấn giúp em
+    - cháu cần tư vấn
+
+- intent: tuvan_diemchuan
+  examples: |
+    - điểm chuẩn bao nhiêu
+    - em muốn biết điểm chuẩn
+    - cntt điểm chuẩn bao nhiêu
+    - Điểm chuẩn
+    - điểm chuẩn
+    - diem chuan bao nhieu
+    - điểm chuẩn ngành này bao nhiêu
+
+- intent: tuvan_hocphi
+  examples: |
+    - Học phí
+    - Hoc phi
+    - hoc phi
+    - học phí sao
+    - học phí bao nhiêu
+    - học phí cnnt bao nhiêu
+    - hoc phi cntt
+    - học phí cntt
+    - học phí kế toán bao nhiêu
+    - học phí luật bao nhiêu
+    - học phí qtkd bao nhiêu
+    - học phí quản trị kinh doanh bao nhiêu
+    - học phí cnsh bao nhiêu
+    - học phí ngôn ngữ anh bao nhiêu
+    - học phí ngôn ngữ trung bao nhiêu
+    - học phí luật kinh tế bao nhiêu
+    - học phí luật quốc tế nhiêu
+    - học phí tài chính ngân hàng bao nhiêu
+    - học phí tcnh bao nhiêu
+    - học phí thương mại điện tử bao nhiêu
+    - học phí tmdt bao nhiêu
+    - học phí công nghệ thực phẩm bao nhiêu
+    - học phí cntp bao nhiêu
+    - học phí công nghệ sinh học bao nhiêu
+    - học phí Công nghệ kỹ thuật điện tử viễn thông bao nhiêu
+    - học phí điện tử viễn thông bao nhiêu
+    - học phí kiến trúc bao nhiêu
+    - học phí du lịch bao nhiêu
+    - học phí du lịch lữ hành bao nhiêu
+
+- intent: tuvan_ctdt
+  examples: |
+    - chương trình đào tạo
+    - ctdt
+    - chuong trinh dao tao
+    - cac nganh dao tao
+    - chương trình đạo tạo gồm những ngành nào
+    - các ngành đào tạo gồm những gì
+    - các ngành đào tạo chính
+    - các ngành đào tạo tại trường
+    - ngành học
+    - các ngành học
+
+
+- intent: tuvan_hoso
+  examples: |
+    - Nộp hồ sơ
+    - nộp hồ sơ
+    - cách nộp hồ sơ
+    - Nộp hồ sơ như thế nào ạ
+    - Nộp hồ sơ qua bưu điện được không
+    - Nộp hồ sơ trực tiếp được không
+    - nop ho so
+    - em muốn nộp hồ sơ nhập học
+    - nhập học có cần nộp hồ sơ không
+    - không nộp hồ sơ có được nhập học không
+    - làm sao để nộp hồ sơ
+    - em muốn nộp hồ sơ qua bưu điện
+
+- intent: tuvan_hocthacsi
+  examples: |
+    - em muốn học thạc sĩ
+    - học thạc sĩ
+    - Học thạc sĩ
+    - thạc sỹ
+    - học thạc sỹ
+    - em chưa tốt nghiệp có học thạc sĩ được không
+    - thạc sĩ
+    - thac si
+    - học thạc sĩ khi nào
+    - học thạc sĩ như thế nào
+    - bây giờ em đăng ký học thạc sĩ được không
+
+- intent: datot_nghiep
+  examples: |
+    - rồi ạ
+    - roi a
+    - da tot nghiep a
+    - đã tốt nghiệp ạ
+    - đã tốt nghiệp rồi ạ
+    - em đã học xong rồi ạ
+    - em đã ra trường rồi ạ
+    - em đã có bằng đại học rồi ạ
+    - em đã có bằng dh
+    - tốt nghiệp rồi ạ
+    - em tốt nghiệp rồi ạ
+    - mình đã tốt nghiệp rồi ạ
+    - em k học đại học ạ
+    - em không học đại học ạ
+    - em mới tốt nghiệp ạ
+    - em mới ra trường ạ
+    - vâng ạ
+    - ok rồi ạ
+
+
+- intent: chuatot_nghiep
+  examples: |
+    - nooooooo
+    - chưa ạ
+    - khong
+    - không học dh
+    - em sắp tốt nghiệp ạ
+    - em vẫn đang học ạ
+    - em còn 1 năm ạ
+    - chưa tốt nghiệp ạ
+    - em chưa tốt nghiệp ạ
+    - mình chưa tốt nghiệp ạ
+    - tôi chưa tốt nghiệp
+    - em mới tốt nghiệp
+
+- intent: tuvan_hoctuxa
+  examples: |
+    - Học online
+    - hoc online
+    - em muốn học online
+    - em muốn học từ xa
+    - em muốn học e learning
+    - em muốn học trực tuyến
+    - học online
+    - hoc tu xa
+    - học từ xa
+    - em muốn học từ xa ạ
+    - học từ xa được không
+    - đào tạo từ xa
+    - dttx
+    - trường có đào tạo từ xa không
+    - học trực tuyến
+    - trực tuyến
+    - trường có chương trình học trực tuyến không ạ
+    - mình muốn học từ xa ạ
+    - học online được không
+    - học trực tuyến được không
+    - học e-learning
+    - e-learning
+    - e learning
+    - learning
+    - trường có E Learning không
+    - chương trình e learning
+
+- intent: online_diemthi
+  examples: |
+    - Địa điểm thi
+    - Điểm học và điểm thi
+    - Điểm thi
+    - địa điểm học
+    - em học ở đâu
+    - học trực tuyến thi ở đâu
+    - học trực tuyến học ở đâu
+    - học online học ở đâu
+    - học online thi ở đâu
+    - em muốn thi
+    - em muon thi
+    - dia diem thi
+    - diem thi
+
+# <!-- cac dia diem thi khi hoc online -->
+
+- intent: diemthi_hanoi
+  examples: |
+    - Hà Nội
+    - hà nội
+    - HN
+    - hn
+    - mình muốn thi tại Hà Nội
+    - tôi muốn thi tại Hà Nội
+    - em muốn thi tại Hà Nội
+    - cháu muốn thi tại Hà Nội
+    - tớ muốn thi tại Hà Nội
+    - mình cần tìm điểm thi tại Hà Nội
+    - em cần tìm điểm thi tại Hà Nội
+    - em muốn đăng ký thi tại Hà Nội
+    - mình muốn đăng ký thi tại Hà Nội
+    - tôi muốn đăng ký thi tại Hà Nội
+    - TP Hà Nội
+    - Thủ đô Hà Nội
+    - thành phố Hà Nội
+    - Ha Noi City
+
+- intent: diemthi_hcm
+  examples: |
+    - HCM
+    - TP HCM
+    - Ho Chi Minh
+    - Hồ Chí Minh
+    - mình muốn thi tại HCM
+    - mình muốn thi tại TP HCM
+    - mình muốn thi tại TP Hồ Chí Minh
+    - tôi muốn thi tại TP Hồ Chí Minh
+    - em muốn thi tại TP Hồ Chí Minh
+    - cháu muốn thi tại TP Hồ Chí Minh
+    - tớ muốn thi tại TP Hồ Chí Minh
+    - mình cần tìm điểm thi tại TP Hồ Chí Minh
+    - em cần tìm điểm thi tại TP Hồ Chí Minh
+    - em muốn đăng ký thi tại TP Hồ Chí Minh
+    - mình muốn đăng ký thi tại TP Hồ Chí Minh
+    - tôi muốn đăng ký thi tại TP Hồ Chí Minh
+    - TP Hồ Chí Minh
+    - Thành phố Hồ Chí Minh
+    - HCM City
+    - Ho Chi Minh City
+
+- intent: diemthi_phuyen
+  examples: |
+    - Phu Yen
+    - Phú Yên
+    - PY
+    - mình muốn thi tại Phú Yên
+    - mình muốn thi tại TP Phú Yên
+    - mình muốn thi tại tỉnh Phú Yên
+    - tôi muốn thi tại Phú Yên
+    - em muốn thi tại Phú Yên
+    - cháu muốn thi tại Phú Yên
+    - tớ muốn thi tại Phú Yên
+    - mình cần tìm điểm thi tại Phú Yên
+    - em cần tìm điểm thi tại Phú Yên
+    - em cần tìm điểm thi tại tỉnh Phú Yên
+    - em muốn đăng ký thi tại Phú Yên
+    - em muốn đăng ký thi tại tỉnh Phú Yên
+    - mình muốn đăng ký thi tại Phú Yên
+    - tôi muốn đăng ký thi tại Phú Yên
+    - tôi muốn đăng ký thi tại tỉnh Phú Yên
+    - TP Phú Yên
+    - Thành phố Phú Yên
+    - Phu Yen City
+
+- intent: diemthi_danang
+  examples: |
+    - Da Nang
+    - DN
+    - Đà Nẵng
+    - mình muốn thi tại Đà Nẵng
+    - mình muốn thi tại TP Đà Nẵng
+    - tôi muốn thi tại Đà Nẵng
+    - em muốn thi tại Đà Nẵng
+    - cháu muốn thi tại Đà Nẵng
+    - tớ muốn thi tại Đà Nẵng
+    - mình cần tìm điểm thi tại Đà Nẵng
+    - em cần tìm điểm thi tại Đà Nẵng
+    - em cần tìm điểm thi tại tỉnh Đà Nẵng
+    - em muốn đăng ký thi tại Đà Nẵng
+    - mình muốn đăng ký thi tại Đà Nẵng
+    - tôi muốn đăng ký thi tại Đà Nẵng
+    - tôi muốn đăng ký thi tại thành phố Đà Nẵng
+    - TP Đà Nẵng
+    - Thành phố Đà Nẵng
+    - Đà Nẵng City
+
+- intent: diemthi_nhatrang
+  examples: |
+    - NT
+    - Nha Trang
+    - mình muốn thi tại Nha Trang
+    - mình muốn thi tại TP Nha Trang
+    - tôi muốn thi tại Nha Trang
+    - em muốn thi tại Nha Trang
+    - cháu muốn thi tại Nha Trang
+    - tớ muốn thi tại Nha Trang
+    - mình cần tìm điểm thi tại Nha Trang
+    - em cần tìm điểm thi tại Nha Trang
+    - em muốn đăng ký thi tại Nha Trang
+    - mình muốn đăng ký thi tại Nha Trang
+    - tôi muốn đăng ký thi tại Nha Trang
+    - tôi muốn đăng ký thi tại thành phố Nha Trang
+    - TP Nha Trang
+    - Thành phố Nha Trang
+    - Nha Trang City
+    - khánh hòa
+
+- intent: diemthi_gialai
+  examples: |
+    - Gia Lai
+    - GL
+    - mình muốn thi tại Gia Lai
+    - mình muốn thi tại TP Gia Lai
+    - tôi muốn thi tại Gia Lai
+    - em muốn thi tại Gia Lai
+    - cháu muốn thi tại Gia Lai
+    - tớ muốn thi tại Gia Lai
+    - mình cần tìm điểm thi tại Gia Lai
+    - em cần tìm điểm thi tại Gia Lai
+    - em cần tìm điểm thi tại tỉnh Gia Lai
+    - em muốn đăng ký thi tại Gia Lai
+    - mình muốn đăng ký thi tại Gia Lai
+    - tôi muốn đăng ký thi tại Gia Lai
+    - tôi muốn đăng ký thi tại thành phố Gia Lai
+    - TP Gia Lai
+    - Thành phố Gia Lai
+    - Gia Lai City
+
+- intent: diemthi_quangbinh
+  examples: |
+    - Quang Binh
+    - QB
+    - Quảng Bình
+    - mình muốn thi tại Quảng Bình
+    - mình muốn thi tại TP Quảng Bình
+    - tôi muốn thi tại Quảng Bình
+    - em muốn thi tại Quảng Bình
+    - cháu muốn thi tại Quảng Bình
+    - tớ muốn thi tại Quảng Bình
+    - mình cần tìm điểm thi tại Quảng Bình
+    - em cần tìm điểm thi tại Quảng Bình
+    - em cần tìm điểm thi tại tỉnh Quảng Bình
+    - em muốn đăng ký thi tại Quảng Bình
+    - mình muốn đăng ký thi tại Quảng Bình
+    - tôi muốn đăng ký thi tại Quảng Bình
+    - tôi muốn đăng ký thi tại thành phố Quảng Bình
+    - TP Quảng Bình
+    - Thành phố Quảng Bình
+    - Quảng Bình City
+
+- intent: diemthi_hatinh
+  examples: |
+    - Ha Tinh
+    - Hà Tĩnh
+    - mình muốn thi tại Hà Tĩnh
+    - mình muốn thi tại TP Hà Tĩnh
+    - tôi muốn thi tại Hà Tĩnh
+    - em muốn thi tại Hà Tĩnh
+    - cháu muốn thi tại Hà Tĩnh
+    - tớ muốn thi tại Hà Tĩnh
+    - mình cần tìm điểm thi tại Hà Tĩnh
+    - em cần tìm điểm thi tại Hà Tĩnh
+    - em cần tìm điểm thi tại tỉnh Hà Tĩnh
+    - em muốn đăng ký thi tại Hà Tĩnh
+    - mình muốn đăng ký thi tại Hà Tĩnh
+    - tôi muốn đăng ký thi tại Hà Tĩnh
+    - tôi muốn đăng ký thi tại thành phố Hà Tĩnh
+    - TP Hà Tĩnh
+    - Thành phố Hà Tĩnh
+    - Hà Tĩnh City
+
+- intent: diemthi_nghean
+  examples: |
+    - Nghe An
+    - NA
+    - Nghệ An
+    - mình muốn thi tại Nghệ An
+    - mình muốn thi tại TP Nghệ An
+    - tôi muốn thi tại Nghệ An
+    - em muốn thi tại Nghệ An
+    - cháu muốn thi tại Nghệ An
+    - tớ muốn thi tại Nghệ An
+    - mình cần tìm điểm thi tại Nghệ An
+    - em cần tìm điểm thi tại Nghệ An
+    - em cần tìm điểm thi tại tỉnh Nghệ An
+    - em muốn đăng ký thi tại Nghệ An
+    - mình muốn đăng ký thi tại Nghệ An
+    - tôi muốn đăng ký thi tại Nghệ An
+    - tôi muốn đăng ký thi tại thành phố Nghệ An
+    - TP Nghệ An
+    - Thành phố Nghệ An
+    - Nghệ An City
+
+- intent: diemthi_ninhbinh
+  examples: |
+    - Ninh Binh
+    - NB
+    - Ninh Bình
+    - ninh binh
+    - mình muốn thi tại Ninh Bình
+    - mình muốn thi tại TP Ninh Bình
+    - tôi muốn thi tại Ninh Bình
+    - em muốn thi tại Ninh Bình
+    - cháu muốn thi tại Ninh Bình
+    - tớ muốn thi tại Ninh Bình
+    - mình cần tìm điểm thi tại Ninh Bình
+    - em cần tìm điểm thi tại Ninh Bình
+    - em cần tìm điểm thi tại tỉnh Ninh Bình
+    - em muốn đăng ký thi tại Ninh Bình
+    - mình muốn đăng ký thi tại Ninh Bình
+    - tôi muốn đăng ký thi tại Ninh Bình
+    - tôi muốn đăng ký thi tại thành phố Ninh Bình
+    - TP Ninh Bình
+    - Thành phố Ninh Bình
+    - Ninh Bình City
+
+- intent: diemthi_vinhphuc
+  examples: |
+    - Vinh Phuc
+    - VP
+    - Vĩnh Phúc
+    - mình muốn thi tại Vĩnh Phúc
+    - mình muốn thi tại TP Vĩnh Phúc
+    - tôi muốn thi tại Vĩnh Phúc
+    - em muốn thi tại Vĩnh Phúc
+    - cháu muốn thi tại Vĩnh Phúc
+    - tớ muốn thi tại Vĩnh Phúc
+    - mình cần tìm điểm thi tại Vĩnh Phúc
+    - em cần tìm điểm thi tại Vĩnh Phúc
+    - em cần tìm điểm thi tại tỉnh Vĩnh Phúc
+    - em muốn đăng ký thi tại Vĩnh Phúc
+    - mình muốn đăng ký thi tại Vĩnh Phúc
+    - tôi muốn đăng ký thi tại Vĩnh Phúc
+    - tôi muốn đăng ký thi tại thành phố Vĩnh Phúc
+    - TP Vĩnh Phúc
+    - Thành phố Vĩnh Phúc
+    - Vĩnh Phúc City
+
+- intent: diemthi_quangninh
+  examples: |
+    - Quang Ninh
+    - QN
+    - Quảng Ninh
+    - mình muốn thi tại Quảng Ninh
+    - mình muốn thi tại TP Quảng Ninh
+    - tôi muốn thi tại Quảng Ninh
+    - em muốn thi tại Quảng Ninh
+    - cháu muốn thi tại Quảng Ninh
+    - tớ muốn thi tại Quảng Ninh
+    - mình cần tìm điểm thi tại Quảng Ninh
+    - em cần tìm điểm thi tại Quảng Ninh
+    - em cần tìm điểm thi tại tỉnh Quảng Ninh
+    - em muốn đăng ký thi tại Quảng Ninh
+    - mình muốn đăng ký thi tại Quảng Ninh
+    - tôi muốn đăng ký thi tại Quảng Ninh
+    - tôi muốn đăng ký thi tại thành phố Quảng Ninh
+    - TP Quảng Ninh
+    - Thành phố Quảng Ninh
+    - Quảng Ninh City
+
+- intent: diemthi_haiphong
+  examples: |
+    - Hai Phong
+    - HP
+    - Hải Phòng
+    - mình muốn thi tại Hải Phòng
+    - mình muốn thi tại TP Hải Phòng
+    - tôi muốn thi tại Hải Phòng
+    - em muốn thi tại Hải Phòng
+    - cháu muốn thi tại Hải Phòng
+    - tớ muốn thi tại Hải Phòng
+    - mình cần tìm điểm thi tại Hải Phòng
+    - em cần tìm điểm thi tại Hải Phòng
+    - em cần tìm điểm thi tại tỉnh Hải Phòng
+    - em muốn đăng ký thi tại Hải Phòng
+    - mình muốn đăng ký thi tại Hải Phòng
+    - tôi muốn đăng ký thi tại Hải Phòng
+    - tôi muốn đăng ký thi tại thành phố Hải Phòng
+    - TP Hải Phòng
+    - Thành phố Hải Phòng
+    - Hải Phòng City
+
+- intent: diemthi_dienbien
+  examples: |
+    - Dien Bien
+    - Điện Biên
+    - mình muốn thi tại Điện Biên
+    - mình muốn thi tại TP Điện Biên
+    - tôi muốn thi tại Điện Biên
+    - em muốn thi tại Điện Biên
+    - cháu muốn thi tại Điện Biên
+    - tớ muốn thi tại Điện Biên
+    - mình cần tìm điểm thi tại Điện Biên
+    - em cần tìm điểm thi tại Điện Biên
+    - em cần tìm điểm thi tại tỉnh Điện Biên
+    - em muốn đăng ký thi tại Điện Biên
+    - mình muốn đăng ký thi tại Điện Biên
+    - tôi muốn đăng ký thi tại Điện Biên
+    - tôi muốn đăng ký thi tại thành phố Điện Biên
+    - TP Điện Biên
+    - Thành phố Điện Biên
+    - Điện Biên City
+
+- intent: diemthi_haiduong
+  examples: |
+    - Hai Duong
+    - HD
+    - Hải Dương
+    - mình muốn thi tại Hải Dương
+    - mình muốn thi tại TP Hải Dương
+    - tôi muốn thi tại Hải Dương
+    - em muốn thi tại Hải Dương
+    - cháu muốn thi tại Hải Dương
+    - tớ muốn thi tại Hải Dương
+    - mình cần tìm điểm thi tại Hải Dương
+    - em cần tìm điểm thi tại Hải Dương
+    - em cần tìm điểm thi tại tỉnh Hải Dương
+    - em muốn đăng ký thi tại Hải Dương
+    - mình muốn đăng ký thi tại Hải Dương
+    - tôi muốn đăng ký thi tại Hải Dương
+    - tôi muốn đăng ký thi tại thành phố Hải Dương
+    - TP Hải Dương
+    - Thành phố Hải Dương
+    - Hải Dương City
+
+- intent: diemthi_bacninh
+  examples: |
+    - Bac Ninh
+    - BN
+    - Bắc Ninh
+    - mình muốn thi tại Bắc Ninh
+    - mình muốn thi tại TP Bắc Ninh
+    - tôi muốn thi tại Bắc Ninh
+    - em muốn thi tại Bắc Ninh
+    - cháu muốn thi tại Bắc Ninh
+    - tớ muốn thi tại Bắc Ninh
+    - mình cần tìm điểm thi tại Bắc Ninh
+    - em cần tìm điểm thi tại Bắc Ninh
+    - em cần tìm điểm thi tại tỉnh Bắc Ninh
+    - em muốn đăng ký thi tại Bắc Ninh
+    - mình muốn đăng ký thi tại Bắc Ninh
+    - tôi muốn đăng ký thi tại Bắc Ninh
+    - tôi muốn đăng ký thi tại thành phố Bắc Ninh
+    - TP Bắc Ninh
+    - Thành phố Bắc Ninh
+    - Bắc Ninh City
+
+- intent: diemthi_bacgiang
+  examples: |
+    - Bac Giang
+    - BG
+    - Bắc Giang
+    - mình muốn thi tại Bắc Giang
+    - mình muốn thi tại TP Bắc Giang
+    - tôi muốn thi tại Bắc Giang
+    - em muốn thi tại Bắc Giang
+    - cháu muốn thi tại Bắc Giang
+    - tớ muốn thi tại Bắc Giang
+    - mình cần tìm điểm thi tại Bắc Giang
+    - em cần tìm điểm thi tại Bắc Giang
+    - em cần tìm điểm thi tại tỉnh Bắc Giang
+    - em muốn đăng ký thi tại Bắc Giang
+    - mình muốn đăng ký thi tại Bắc Giang
+    - tôi muốn đăng ký thi tại Bắc Giang
+    - tôi muốn đăng ký thi tại thành phố Bắc Giang
+    - TP Bắc Giang
+    - Thành phố Bắc Giang
+    - Bắc Giang City
+
+# <!-- neu khong ng dung nhap diem thi k co trong danh sach -->
+- intent: diemthi_no
+  examples: |
+    - Cao bằng
+    - Bắc kạn
+    - Lạng sơn
+    - Nam định
+    - cần thơ
+    - kiên giang
+    - phú quốc
+    - Huế
+    - Đà Lạt
+    - Lâm đồng
+    - thái nguyên
+    - lào cai
+    - hưng yên
+    - quảng trị
+    - Đồng nai
+    - Tây ninh
+    - Dak lak
+    - tay ninh
+    - nam dinh
+    - quang tri
+    - hue
+    - phu quoc
+    - lang son
+    - cao bang
+    - thai nguyen
+    - hung yen
+    - lam dong
+    - da lat
+
+# <!-- cac nganh dao tao online -->
+- intent: online_cacnganh_online
+  examples: |
+    - Các ngành đào tạo online
+    - học online có những ngành nào
+    - học online có những môn gì
+    - các ngành đào tạo từ xa
+    - các ngành đào tạo trực tuyến
+    - học trực tuyến gồm những môn nào
+    - e learning gồm những môn nào
+    - các ngành đào tạo e- learning
+    - các nganh dao tao tu xa
+    - cac nganh dao tao truc tuyen
+    - cac nganh dao tao online
+    - các ngành học online
+    - các ngành học trực tuyến
+    - các ngành học từ xa
+    - danh sách các ngành học từ xa
+    - danh sách các ngành học online
+    - danh sách các ngành học e learning 
+
+- intent: online_hocphi
+  examples: |
+    - học phí đào tạo online
+    - học online mất bao nhiêu tiền
+    - học từ xa mất bao nhiêu tiền
+    - đào tạo từ xa mất bao nhiêu tiền
+    - học trực tuyến mất bao nhiêu tiền
+    - học online đóng bao nhiêu tiền
+    - học trực tuyến đóng bao nhiêu
+    - học từ xa đóng bao nhiêu tiền
+    - đóng bao nhiêu tiền học online
+    - đóng bao nhiêu tiền học trực tuyến
+    - em phải đóng bao nhiêu tiền học trực tuyến
+
+- intent: online_dangki
+  examples: |
+    - em muốn đăng kí học online
+    - em muốn đăng ký học trực tuyến
+    - đăng ký học trực tuyến
+    - đăng ký học online
+    - đăng kí học online
+    - hok online
+    - hk online
+    - hk trực tuyến
+    - dk hk online
+    - dk học online
+    - dk học trực tuyến
+    - dk đào tạo từ xa
+    - dk dttx
+    - đăng ký học trực tuyến giúp em
+    - đăng ký học trực tuyến như nào
+    - đăng kí học e learning
+    - em muốn dk hk e learning
+
+- intent: online_thutuc_dangki
+  examples: |
+    - Thủ tục đăng kí
+    - Thủ tục đăng ký như nào
+    - thủ tục đăng kí học online
+    - thủ tục đăng kí học trực tuyến
+    - thủ tục đăng kí học từ xa
+    - học online thì thủ tục như thế nào
+    - học từ xa thì thủ tục đăng kí như thế nào
+    - thủ tục dk ntn
+    - thủ tục dk đào tạo từ xa
+    - dttx thủ tục đk như thế nào
+    - em muốn làm thủ tục đăng kí học
+    - em muốn làm thủ tục đăng ký học
+    - thủ tục đăng ký online
+    - thủ tục dk trực tuyến
+    - thủ tục dk từ xa
+    - thủ tục đăng ký từ xa
+    - thủ tục dk e learning
+
+- intent: online_thutuc_nhaphoc
+  examples: |
+    - Thủ tục nhập học
+    - thủ tục nhập học ntn
+    - thu tuc nhap hoc
+    - thu tuc nhap hk
+    - thủ tục nhập học như thế nào ạ
+
+- intent: chuongtrinh_daotao
+  examples: |
+    - Đào tạo
+    - dao tao
+    - đào tạo
+    - đào tạo gồm những ngành nào
+    - trường đào tạo gồm những ngành nào
+    - cho em hỏi trường đào tạo ngành nào
+    - daotao
+    - các ngành đào tạo
+    - các ngành đào tạo gồm những ngành nào
+
+# <!-- kich ban xet hoc ba -->
+- intent: xet_hocba
+  examples: |
+    - xét học bạ không
+    - xét tuyển học bạ
+    - các ngành xét học bạ
+    - trường xét học bạ không
+    - xét học bạ cntt
+    - xét học bạ công nghệ thông tin
+    - xét học bạ du lịch
+    - xét học bạ kế toán
+    - xét học bạ luật
+    - xét học bạ quản trị kinh doanh
+    - xét học bạ qtkd
+    - xét học bạ điện tử viễn thông
+    - em muốn xét học bạ cntt
+    - xét học bạ thpt không
+    - xét học bạ trung học phổ thông
+
+- intent: hoc_caodang
+  examples: |
+    - học cao đẳng bao nhiêu năm
+    - học cao đẳng bao nhiêu năm ạ
+    - học cao đẳng mất bao nhiêu năm
+    - học cao đẳng mất bao nhiêu năm ạ
+    - em muốn học cao đẳng thì mất bao nhiêu năm
+    - cao đẳng học mất bao nhiêu năm
+    - tư vấn giúp em học cao đẳng mất bao nhiêu năm
+    - tư vấn giúp mình học cao đẳng mất bao nhiêu năm
+    - cao đẳng học mất bao nhiêu năm
+
+- intent: hoc_daihoc
+  examples: |
+    - học đại học mất bao nhiêu năm
+    - Học DH mất bao nhiêu năm ạ
+    - cho em hỏi, học đại học mất bao nhiêu năm ạ
+    - học đại học ở trường mất bao nhiêu năm ạ
+    - em muốn tư vấn là học DH mất bao nhiêu năm ạ
+    - học đại học mất bao lâu ạ
+    - tư vấn giúp em là học đại học mất bao nhiêu năm
+    - tư vấn giúp em là học đại học mất bao lâu
+    - em học mất bao nhiêu năm
+    - học mất bao nhiêu năm
+    - học mất bao nhiu năm
+
+- intent: kitucxa
+  examples: |
+    - ktx
+    - kí tuc xá
+    - kí túc xá
+    - ky tuc xa
+    - trường có ktx k
+    - trường có kí túc xá không
+    - em muốn ở kí túc xá
+    - kí túc xá ở đâu
+    - ki tuc xa
+
+- intent: hoidiemdo
+  examples: |
+    - bao nhiêu điểm thì đỗ
+    - bao nhiêu điểm thì đỗ vào trường
+    - em đc bao nhiêu điểm thì đỗ
+    - đạt bao nhiêu điểm thì đỗ  
+    - bn điểm đỗ
+    - điểm đỗ bao nhiêu
+
+- intent: diemdo1
+  examples: |
+    - em được 15 điểm có đỗ không
+    - em được 16 điểm đỗ không
+    - em được 17 điểm đỗ không
+    - em được 18 điểm đỗ không
+    - em được 19 điểm đỗ không
+    - em được 20 điểm
+    - em được 20.5 điểm
+    - trên 15 điểm có đỗ không
+    - dc 15 điểm đỗ ngành nào
+    - 15.5 điểm
+    - 16.5 điểm
+    - 17.5 điểm
+    - 18.5 điểm
+    - 19.5 điểm
+    - 19.5 điểm thì sao
+    - 20.5 điểm
+    - 20 điểm có đỗ không
+    - 20.5 điểm có đỗ không
+
+- intent: diemdo2
+  examples: |
+    - em được 21 điểm có đỗ không
+    - em được 22 điểm đỗ không
+    - em được 23 điểm đỗ không
+    - em được 24 điểm đỗ không
+    - em được 25 điểm đỗ không
+    - em được 26 điểm đỗ không
+    - em được 27 điểm đỗ không
+    - em được 21.5 điểm
+    - em được 22.5 điểm
+    - em được 30 điểm
+    - em được 29 điểm
+    - em được 25.5 điểm
+    - em được 23.5 điểm
+    - em được 26.5 điểm
+    - 21 điểm có đỗ không
+    - 22 điểm có đỗ không
+    - 23 điểm có đỗ không
+    - 24 điểm có đỗ không
+    - 25 điểm có đỗ không
+    - 27 điểm có đỗ không
+    - 24 điểm 
+    - 27 điểm 
+    - 21.5 điểm
+    - 30 điểm  
+    - 29 điểm 
+
+- intent: diemdotruot
+  examples: |
+    - em được 14.5 điểm có đỗ không
+    - em được 14 điểm đỗ không
+    - em được 13 điểm đỗ không
+    - em được 12 điểm đỗ không
+    - em được 10 điểm đỗ không
+    - em được 9 điểm đỗ không
+    - em được 8 điểm đỗ không
+    - em được 7 điểm có đỗ không
+    - em được 6 điểm có đỗ không
+    - em được 5 điểm có đỗ không
+    - em được 4 điểm có đỗ không
+    - em được 3 điểm có đỗ không
+    - em được 2 điểm có đỗ không
+    - em được 1 điểm có đỗ không
+    - em được 0 điểm có đỗ không
+    - 1 điểm có đỗ không
+    - 12 điểm có đỗ không
+    - 14 điểm có đỗ không
+    - 15 điểm có đỗ không
+    - 1 điểm
+    - 2 điểm
+    - 3 điểm
+
+- intent: xethocba_thptqg
+  examples: |
+    - Trường xét điểm học bạ hay xét trong kì thi THPT quốc gia thế ạ ??
+    - Trường xét điểm học bạ hay thi THPT quốc gia thế ạ
+    - Trường xét điểm học bạ hay xét trong kì thi THPTQG thế ạ
+    - Trường xét điểm học bạ hay xét kì thi THPTQG thế ạ
+    - xét học bạ hay thpt
+    - xét học bạ hay thi thpt quốc gia
+    - trường xét học bạ hay xét thi trung học phổ thông quốc gia
+    - trường xét học bạ hay xét thi THPT QG
+    - Em có thể vừa xét điểm học bạ, vừa xét điểm THPTQG 2021 được không ạ
+
+- intent: traloi_xethocba
+  examples: |
+    - hoc bạ
+    - học bạ
+    - xét học bạ
+    - xet hoc ba
+
+- intent: traloi_xetthptqg
+  examples: |
+    - kì thi THPT quốc gia
+    - THPT quốc gia
+    - THPTQG
+    - kỳ thi thpt quoc gia
+    - thptqg
+    - xét THPTQG
+    - xét thpt
+#  kịch bản học chưa rõ muốn dk kí môn nào
+- intent: em_muon_hoc
+  examples: |
+    - em muốn học
+    - muốn học ạ
+    - tôi muốn học
+    - cháu muốn học
+    - muon hoc
+    - em muon hoc
+
+- intent: yesno_muonhoc
+  examples: |
+    - phải ạ
+    - đúng rồi ạ
+    - chuẩn ạ
+    - chuẩn rồi
+    - chuẩn đó
+    - chuẩn đấy
+    - ok ạ
+    - vâng
+    - chắc chắn rồi
+
+- intent: yesno_kohoc
+  examples: |
+    - không ạ
+    - khg
+    - k
+    - sai
+    - nooo
+    - Không
+    - K
+ 
+# ////////////////////////////////////
+- intent: hoc_159
+  examples: |
+    - Cho em hỏi khi em nộp phiếu bảo điểm trực tiếp tại trường thì mất bao lâu để nhận được xác nhận nhập học?
+
+- intent: hoc_160
+  examples: |
+    - cháu được 33,7 điểm, đăng ký nguyện vọng 2 có đỗ vào khoa ngôn ngữ Trung không ạ
+
+- intent: hoc_161
+  examples: |
+    -  Thầy cô ơi cho em hỏi, nghành CNTT có xét tuyển đợt 2 không ạ.
+
+- intent: hoc_162
+  examples: |
+          - thương mại điện tử là học ở đâu Hà Nội vậy ạ. Nhập học có được đổi ngành học k ạ
+
+- intent: hoc_163
+  examples: |
+          - Em chào admin ạ. Em muốn hỏi là em chưa từng đăng kí xét tuyển vào trường, và sau khi biết điểm em muốn đăng kí vào trường theo hình thức này thì có được không ạ? Nếu không thì có thể tư vấn cho em phương thức khác không ạ?
+
+- intent: hoc_164
+  examples: |
+          - Liệu những ngành này có xét tuyển bổ sung đợt 2 không ạ
+
+- intent: hoc_165
+  examples: |
+          - Tôi là 1 phụ huynh có con sinh năm 2004 muốn hỏi cháu ko đăng kí nguyện vọng vào trường trước khi TN THPT vậy bây giờ nhà trường có phương thức xét tuyển vào để cháu có thể dự xét tuyển vào trường ko ạ ? Cháu muốn học ngành thiết kế đồ họa
+
+- intent: hoc_166
+  examples: |
+          - Em mất thẻ bảo hiểm rồi thì phải làm sao ạ
+
+- intent: hoc_167
+  examples: |
+          -  Trường còn xét tuyển đợt 2 không ạ, hay còn xét học bạ ko ạ??
+
+- intent: hoc_168
+  examples: |
+          - Chương trình đào tạo đại học hệ không chính quy là như thế nào ạ? Học từ xa với vừa đi học vừa đi làm thì sẽ học những gì ạ?
+
+- intent: hoc_169
+  examples: |
+          - Trường có xét tuyển đợt 2 k ạ
+          - Trường mk có xét tuyển đợt 2 không ạ
+
+- intent: hoc_170
+  examples: |
+          -   Em xin được hỏi, hiện nay đã có kết quả điểm xét theo kết qua điểm thi tốt nghiệp, em đăng ký xét điểm theo học bạ thì nagỳ nào có kết quả xét học bạ ạ.Em trân trọng cảm ơn.
+
+- intent: hoc_171
+  examples: |
+          - em có bản giấy khai sinh photo nhưng đóng dấu chứng thực từ năm 2017. em nộp có được ko ạ?
+
+- intent: hoc_172
+  examples: |
+          - liệu e vừa đủ điểm ngành này và bị thiếu mất chỉ tiêu phụ thế là không đủ điều kiện đỗ, liệu e còn hi vọng nào không ạ
+
+- intent: hoc_173
+  examples: |
+          - Trường có xét tuyển đợt 2 ko ạ ?E đc 24.55 điểm có cơ hội đậu ko ạ?Mong trường trả lời e vs ạ 
+
+- intent: hoc_174
+  examples: |
+          - Cho e hỏi điều kiện liên thông 
+          - Cho em hỏi điều kiện học liên thông 
+          - điều kiện học liên thông 
+
+- intent: hoc_175
+  examples: |
+          - Ad ơi cho mình hỏi là giờ mình phải gửi giấy kq thpt xg thì mới có giấy báo nhập học ạ?
+
+- intent: hoc_176
+  examples: |
+          -   Trường có xét tuyển đợt 2 không ạ Bây giờ em trượt đợt 1 các trường đăng ký rồi em mong có đợt hai để xét vào trường mình ạ :((
+
+- intent: hoc_177
+  examples: |
+          - Trường mk còn chỉ tiêu k ạ
+
+- intent: hoc_178
+  examples: |
+          - Em k đỗ nguyện vọng của trường nhưng e muốn học ngành ngôn ngữ trung của trường theo hệ k chính quy có được không ạ? Nếu được học thì cách đăng kí nhập học như thế nào ạ
+- intent: hoc_179
+  examples: |
+          - E học ở hà nội thì học ngành kế toán ở cơ  sở nào ạ
+
+- intent: hoc_180
+  examples: |
+          - cho em hỏi sinh viên thuộc hộ nghèo, có điểm trung bình trên 3.2 theo hệ 4 có được miễn giảm học phí không?
+          - sinh viên thuộc hộ nghèo có được giảm học phí không
+
+- intent: hoc_181
+  examples: |
+          - Cho e hỏi là e học ngành kế toán thì sẽ học ở cơ sở nào và ở đâu ạ
+
+- intent: hoc_182
+  examples: |
+          -   Nhà trường cho em xin hình thức tính điểm của khối thiết kế công nghiệp vs ạ
+
+- intent: hoc_183
+  examples: |
+          - Tư vấn học liên thông đại học nghành tài chính ngân hàng
+          - cần tư vấn nghành tài chính ngân hàng
+          - em cần tư vấn nghành tài chính ngân hàng
+
+- intent: hoc_184
+  examples: |
+          - Dạ cho em hỏi về chương trình học của khoa ngôn ngữ Trung?hk ngành này có khó không ạ?Cơ hội việc làm thì sao ạ
+
+- intent: hoc_185
+  examples: |
+          -  Các thầy cô cho em hỏi là trường còn lấy điểm thi vẽ của trường kiến trúc để xét ngành thiết kế nội thất không ạ? Nếu có thì ngày bao nhiêu và điểm vẽ khối h01 hoặc h06 lấy là bố cục màu hay hình hoạ ạ ?
+
+- intent: hoc_186
+  examples: |
+          - Em đăng kí ngôn ngữ Trung của trường và thừa 0,25 điểm mà sao hệ thống báo là ko đỗ ạ:(((
+
+- intent: hoc_187
+  examples: |
+          - Nếu e đc 21.75 nhưng điểm toán đc 8.2 thì có cơ hội đỗ ko ạ
+
+- intent: hoc_188
+  examples: |
+          - Em được 22.6 điểm liệu có đỗ ngành Cntt của trường k ạ
+
+- intent: hoc_189
+  examples: |
+          - Cho e hỏi . Em rớt nguyện vọng 1 là ngành Quản trị kinh doanh, nếu xét tuyển đợt hai, e có thể nộp hồ sơ lại không và điểm xét tuyển đợt 2 có cao hơn đợt 1 không ạ
+- intent: hoc_190
+  examples: |
+          - Thầy cô có thể tư vấn cho em về hệ đào tạo theo phương thức từ xa và vừa học vừa làm không ạ
+
+- intent: hoc_191
+  examples: |
+          -   Cho e hỏi là trg mk có xét thêm đợt 2 ko ạ Nếu xét đợt 2 thì vào khi nào ạ Nếu xét đợt 2 thì có hạ điểm xuống ko ạ
+
+- intent: hoc_192
+  examples: |
+          - E chào thầy cô ạ , thầy cô ơi , e đăng ký xét tuyển học bạ môn văn hoá , và lấy điểm thi năng khiếu từ trường khác sang để xét trường mình . E tính thì đủ điểm , vậy sao trên hệ thống ghi là e trượt vậy ạ . Thầy cô cho em xin công thức tính điểm với ạ. E cảm ơn , mong thầy cô phản hồi sớm giúp em ạ
+- intent: hoc_193
+  examples: |
+          - Có điểm chuẩn chưa ạ
+
+- intent: hoc_194
+  examples: |
+          -  Em muốn hỏi là ngành đào tạo hệ chính quy của trường mình năm nay có xét bổ sung đợt 2 không ạ? Em được 24,4 hiện tại em có NV muốn vào trường thì còn cơ hội không ạ? Mong các thầy cô giải đáp thắc mắc giúp em ạ. Em cảm ơn ạ
+
+- intent: hoc_195
+  examples: |
+          - Cách tính điểm trúng tuyển ạ
+- intent: hoc_196
+  examples: |
+          - cho e hỏi ngành này trường mình có xét tuyển bổ sung bây giờ không ạ
+
+- intent: hoc_197
+  examples: |
+          - Thầy cô có thể cho em biết rằng ngành cntt sẽ được học ở đâu k ạ. Học phí cụ thể của ngành là bao nhiêu ạ. Nếu em muốn học song bằng của trường thì phải làm ntn ạ. Em cám ơn ạ
+
+- intent: hoc_198
+  examples: |
+          - Đại học mở có đợt 2 không ạ? E muốn đăng ký thì phải làm như thế nào ạ.
+
+- intent: hoc_199
+  examples: |
+          - Trường mình có xét tuyển đợt 2 không ạ
+
+- intent: hoc_200
+  examples: |
+          -  Ad ơi cho mình hỏi, em là thí sinh tự do đký vào khoa, đã đủ đkiện để trúng tuyển rồi nhưng khi nhập số cmnd vào thì ko thấy, có phải là do đang cập nhật không ạ hay là do em không đủ điều kiện?
+- intent: hoc_201
+  examples: |
+          - Hệ vừa học vừa làm của trường mới có hay từ lâu rồi ạ?
+- intent: hoc_202
+  examples: |
+          - trường có nhận xét tuyền bổ sung đợt 2 không ạ
+
+- intent: hoc_203
+  examples: |
+          -   Em muốn hỏi là em đỗ ngành công nghệ thực phẩm ( có đki trong danh sách nguyện vọng )của trường mà em 23,5 điểm ,sau này khi vào học em muốn chuyển sang ngành kế toán được không ạ
+- intent: hoc_204
+  examples: |
+          - Cho em hỏi , em đã nộp hồ sơ vào trường mình theo phương thức xét tuyển học bạ . Nhưng chưa đăng kí thông tin trên trang của trường vì em không tìm thấy thì có sao không ạ ?
+- intent: hoc_205
+  examples: |
+          - Cho em hỏi là nếu mà chuẩn bị nhập học mà em muốn đăng kí học thêm 1 ngành nữa có được không vậy ạ
+- intent: hoc_206
+  examples: |
+          - Trường còn xét đợt 2 ko ạ?Nếu ban đầu e ko đky trường nhưng đợt 2 e đky vẫn đc phải ko ạ ?E đc 24.55 có cơ hội đậu ngành thương mại điện tử ko ạ???
+- intent: hoc_207
+  examples: |
+          - Cho em hỏi cách tính điểm vào ngành kế toán của trường ạ?
+- intent: hoc_208
+  examples: |
+          - Bao giờ trường xét tuyển đợt 2 ạ
+
+- intent: hoc_209
+  examples: |
+          -  Giấy tờ cần thiết để nhập học gồm có gì
+- intent: hoc_210
+  examples: |
+          - Cho em hỏi là trường còn xét học bạ hay còn xét tuyển đợt 2 không ạ
+
+- intent: hoc_211
+  examples: |
+          - xét học bạ thpt là xét như thế nào ?
+          - xét học bạ trung học phổ thông là xét như thế nào ?
+          - xét học bạ thpt như thế nào ạ
+
+- intent: hoc_212
+  examples: |
+          -  Em đăng kí xét tuyền đợt 1 không đủ điểm ạ ... em muốn hỏi rằng trường còn phương thức xét tuyển hoặc đợt xét tuyển nào cho chúng em nữa không ạ!
+- intent: hoc_213
+  examples: |
+          - Điểm xét tuyển có phải là điểm chuẩn đậu vào các khoa ko
+- intent: hoc_214
+  examples: |
+          - con tôi thi được 22,9đ thiếu 0,1đ ngành CNTT. chỉ tiêu của trường 330 với số điểm là 23đ mới đậu. vậy cho tôi hỏi trường có xét tuyển đợt 2 không ạ và con tôi có cơ hội đăng ký không?
+- intent: hoc_215
+  examples: |
+          - Cô ơi em muốn chuyển từ quản trị kinh doanh sang thương mại điện tử có được không ạ
+- intent: hoc_216
+  examples: |
+          - theo em vừa tìm hiểu thì bên trường mình có đào tạo hệ từ xa page có thể tư vẫn thêm cho e về hệ đào tạo này được không ạ. E cảm ơn!2- học hệ đào tạo từ xa sau năm nhất có được lên học chính quy không ạ
+- intent: hoc_217
+  examples: |
+          - Khoa tiếng Trung ở cơ sở nào ạ?
+
+- intent: hoc_218
+  examples: |
+          -  Em đăng kí nv2 vào ngành thiết kế đồ hoạ của trường , điểm em xét từ bên trường DH Kiến Truc điểm thi của em đạt 18₫ ! Theo cách tính của trường em được 28,5 , vậy sao wed vẫn báo trượt ạ ? Và vì sao tính theo hệ số 2 mà thang điểm 30 ạ ?
+- intent: hoc_219
+  examples: |
+          - Thưa admin, Điểm thi của em là 22.8 nhưng mà em vẫn bị trượt nguyện vọng cuối đó là vào ngành IT của trường mình , thì em còn có cơ hội nào để đỗ không vậy ạ?
+- intent: hoc_220
+  examples: |
+          - Khi xác nhận nhập học cần mang theo lí lịch hs-sv và có xác nhận của chính quyền địa phương. Vậy cho em hỏi, chính quyền địa phương là ở phường phải không ạ?
+
+- intent: hoc_221
+  examples: |
+          -  Cho em hỏi , em thi khối A00 được 23.2 điểm ngành công nghệ thông tin thì có đỗ đc vào trường mình không ạ . Trường đại học mở là nv2 của em
+- intent: hoc_222
+  examples: |
+          - Khoa Kinh tế học tại địa chỉ nào vậy ạ?
+- intent: hoc_223
+  examples: |
+          - học đại học có ny k
+- intent: hoc_224
+  examples: |
+          - Trường có xét tuyển bổ sung đợt 2 không ạ.Nếu có thì thời gian là bao giờ ạ
+- intent: hoc_225
+  examples: |
+          - e muốn hỏi trường mình còn xét tuyển bằng học bạ k ạ? có xét tuyển bổ sung đợt 2 k ạ?
+- intent: hoc_226
+  examples: |
+          - Em đã đỗ khoa công nghệ thông tin của trường đại học mở nhưng em lỡ để nguyện vọng trường công đoàn lên trên(và đã đỗ rồi ) nhưng em không muốn học ở công đoàn thì có cách nào để học tại trường đại học mở không ạ. E xin cảm ơn
+
+- intent: hoc_227
+  examples: |
+          - Ad cho e hỏi chút ạ Đào tạo từ xa và chính quy khác nhau nhiều k ạ . Thời gian học 4 năm ạ ,và học cùng chính quy ạ ,ra trường bằng co khác nhau hay giống nhau ạ
+- intent: hoc_228
+  examples: |
+          - học đại học thì có kí túc k
+    
+- intent: hoc_229
+  examples: |
+          - Học khoa kế toán thì cơ sở học ở đâu ạ?Giảm 50% học phí là được giảm bao nhiều tiền 1 năm ạ ?.Em cảm ơn ạ
+
+- intent: hoc_230
+  examples: |
+          -  Cho e hỏi là sinh viên trường khác có đc học văn bằng 2 kế toán của trường mình k ạ
+
+- intent: hoc_231
+  examples: |
+          - Thầy cô cho em hỏi, ngành quản trị DV-DL-LH học tại cơ sở nào vậy ạ??? Và đăng ký KTX là được vào ở luôn đúng không ạ???
+
+- intent: hoc_232
+  examples: |
+          - Trường có mở tuyển sinh đợt 2 không ạ?Nếu có thì em cần làm gì ạ vì đợt 1 em không có nguyện vọng nào ở trường ạ?
+
+- intent: hoc_233
+  examples: |
+          - Em có đặt nguyện vọng cntt của trg Cho em hỏi em có đỗ không ạ Vs tra cứu kết quả xét tuyển ở đâu ạ ?
+
+- intent: hoc_234
+  examples: |
+          - Xét tuyển kết quả học tập năm lớp 12
+          - em muốn xét tuyển kết quả học tập năm lớp 12
+          - trường có xét tuyển kết quả học tập năm lớp 12
+          - nhà trường có xét tuyển kết quả học tập năm lớp 12 không
+
+- intent: hoc_235
+  examples: |
+          - Tại sao em vẫn chưa nhận đc thông báo về việc có trúng tuyển hay k vậy ạ
+          - Tại sao em vẫn chưa có thông báo trúng tuyển
+
+- intent: hoc_236
+  examples: |
+          - Cho em hỏi 1 chút ạ em tên trần văn đường và em có điểm toán 7.4 văn 7.5 và vẽ 8 em cộng vào đã hơn điểm trúng tuyển r tại sao em ko tra dc thông tin của em trong danh sách trúng tuyển ạ -Em sbd 0115925321- cmt 001202005618Mong nhà trường giúp đỡ
+
+- intent: hoc_237
+  examples: |
+          - Đến hôm nay thì trường mình có còn nhận xét hồ sơ học bạ không ạ ?
+
+- intent: hoc_238
+  examples: |
+          - Sau đợt công bố điểm chuẩn lần 1 này , em được 21,75 thì em có còn cơ hội nào khác để học ngành Quản trị kinh doanh tại trường không ạ? Em rất mong được nhà trường giải đáp sớm ạ , em xin chân thành cảm ơn!
+
+- intent: hoc_239
+  examples: |
+          - em muốn đăng ký đào tạo từ xa
+          - em muốn đăng ký đào tạo từ xa như thế nào ạ
+          - em muốn đăng ký đào tạo từ xa thì làm như thế nào ạ
+          - học từ xa được không ạ
+          - em muon hoc tu xa hon a
+   
+
+- intent: hoc_240
+  examples: |
+          - Em không đỗ ngành đại trà, e muốn học ngành đào tạo từ xa thì học tại trường hay ntn ạ, có học cùng hệ đại trà và được cấp bằng như hệ đại trà k ạ
+- intent: hoc_241
+  examples: |
+          - Trường cho em hỏi là em đủ điểm nv 3,4 nhưng em muốn học ở nv 4 thì làm thế nào ạ
+
+- intent: hoc_242
+  examples: |
+          - Mình muốn hỏi điểm dự kiến ngành marketing năm nay của trường ntn?
+          - điểm dự kiến ngành marketing năm nay ạ
+          - cho em hỏi điểm dự kiến ngành marketing năm nay ạ
+          - cho em hỏi điểm dự kiến ngành marketing năm nay bao nhiêu
+
+- intent: hoc_243
+  examples: |
+          - Thưa thầy cô, em muốn hỏi ngành tự động hoá và điện tử viện thông hiện tại có xét học bạ không ạ? Nếu có xét thì thủ tục như thế nào ạ?Em cảm ơn ạ.
+
+- intent: hoc_244
+  examples: |
+          - Mình muốn hỏi điểm dự kiến ngành CNTT năm nay của trường ntn?
+          - điểm dự kiến ngành CNTT năm nay ạ
+          - cho em hỏi điểm dự kiến ngành CNTT năm nay ạ
+          - cho em hỏi điểm dự kiến ngành CNTT năm nay bao nhiêu
+          - Mình muốn hỏi điểm dự kiến ngành Công nghệ thông tin năm nay của trường ntn?
+          - điểm dự kiến ngành Công nghệ thông tin năm nay ạ
+          - cho em hỏi điểm dự kiến ngành Công nghệ thông tin năm nay ạ
+          - cho em hỏi điểm dự kiến ngành Công nghệ thông tin năm nay bao nhiêu
+
+- intent: hoc_245
+  examples: |
+          - trường cho em hỏi ạ, điểm xét tuyển học bạ của em cao hơn điểm chuẩn của trường, nhưng  khi em tra cứu tại web thì web không khớp với danh sách trúng tuyển, không biết có chuyện gì ạ? Em nộp hồ sơ bổ sung vào thời gian gia hạn thêm của trường, khi nộp do chưa lấy được phiếu điểm thi năng khiếu tại trường đại học MTCN nên em có trình bày với giáo viên và được phản hồi là phiếu điểm này em có thể nộp bổ sung khi nhập học sau ạ.
+
+- intent: hoc_246
+  examples: |
+          - Mình muốn hỏi điểm dự kiến ngành Kế toán năm nay của trường ntn?
+          - điểm dự kiến ngành Kế toán năm nay ạ
+          - cho em hỏi điểm dự kiến ngành Kế toán năm nay ạ
+          - cho em hỏi điểm dự kiến ngành Kế toán năm nay bao nhiêu
+    
+- intent: hoc_247
+  examples: |
+          - Em xin hỏi trường mình xét tuyển đợt 2 vào ngày nào ạ,
+
+- intent: hoc_248
+  examples: |
+          - Mình muốn hỏi điểm dự kiến ngành DTTT năm nay của trường ntn?
+          - điểm dự kiến ngành DTTT năm nay ạ
+          - cho em hỏi điểm dự kiến ngành DTTT năm nay ạ
+          - cho em hỏi điểm dự kiến ngành DTTT năm nay bao nhiêu
+          - Mình muốn hỏi điểm dự kiến ngành Điện tử truyền thông năm nay của trường ntn?
+          - điểm dự kiến ngành Điện tử truyền thông năm nay ạ
+          - cho em hỏi điểm dự kiến ngành Điện tử truyền thông năm nay ạ
+          - cho em hỏi điểm dự kiến ngành Điện tử truyền thông năm nay bao nhiêu
+
+- intent: hoc_249
+  examples: |
+          - không biết trường mình ngành này có xét tuyển đợt 2 không nhỉ, e 23 điểm mà không đăng kí ngành này. giờ e muốn vào để học ạ. ngành CNKT Điều khiển và tự động hóa
+
+- intent: hoc_250
+  examples: |
+          - cô ơi điểm hình họa điểm chuẩn ý ạ thì phải trên 5.5 á cô ơi. Và đợt 1 tính từ hôm hạn là 25/9 đúng không ạ
+
+- intent: hoc_251
+  examples: |
+          - Em thưa thầy cô ạ,em được 24.95 điểm thi THPT .Vì sơ suất trong vấn đề đăng ký nguyện vọng nên hiện tại em đã trượt tất cả nguyện vọng đăng kí trực tuyến. Em có mong muốn theo học ở trường,thầy côtrường cho em hỏi trường có xét tuyển thêm chỉ tiêu nữa không ạ?Và nếu em có cơ hội xét thì em cần những thủ tục giấy tờ gì để đăng ký nhập học ạ!Em xin cảm ơn
+
+- intent: hoc_252
+  examples: |
+          - Xin hỏi 23,55 điểm có thể đỗ khoa gì?thanhks!
+          - 23,55 điểm có thể đỗ khoa gì
+
+- intent: hoc_253
+  examples: |
+          - E muốn xem e đã đỗ chưa thì làm thế nào ạ snd của e là 22007749
+
+- intent: hoc_254
+  examples: |
+          - Dạ thưa thầy cô Em xét tuyển học bạ ngành thiết kế thời trang , em được 21,25 đ ( chưa nhân hệ số) , e tra trên cổng thông tin không được ak !Không biết điểm em có đỗ không akNgành của em xét học bạ lấy bao nhiêu điểm ak Trân trọng !
+
+- intent: hoc_255
+  examples: |
+          - Trường đã đủ tiêu chí đợt 1 chưa ạ
+
+- intent: hoc_256
+  examples: |
+          - Bây giờ em chuyển từ kế toán sang luật quốc tế có được k ạ
+
+- intent: hoc_257
+  examples: |
+          - Em có đăng ký khoa quản trị kinh doanh nhưng theo điểm chuẩn trưởng công bố k đủ điểm thì liệu với điểm thi 18,95 em có được đăng ký lại khoa công nghệ kỹ thuật điện tử viễn thông k ạ
+
+- intent: hoc_258
+  examples: |
+          - Em chào thầy cô ạ, thưa thầy/cô điểm thi của em đc 23.85 mà khi em tra cứu ngành quản trị kinh doanh của trường thì thấy hệ thống báo là k trúng tuyển ạ. Điểm thi của em có cao hơn điểm chuẩn của trường ạ. Thầy cô có thể cho em biết tại sao không ạ
+
+- intent: hoc_259
+  examples: |
+          - Em được 24,2 điểm đã đỗ ngành công nghệ thông tin của trường nhưng em để nguyện vọng 8 mà em thấy ngành này của trường ghi là nguyện vọng từ 6 trở xuống. Vậy hồ sơ của em có bị loại không ạ ?Em cảm ơn ạ
+
+- intent: hoc_260
+  examples: |
+          -  Khi trượt ngành công nghệ thông tin thì trường có đào tạo vừa học vừa làm ngành này . Ad có thể giải thích cụ thể phương thức học và làm ngành này như thế nào ạ
